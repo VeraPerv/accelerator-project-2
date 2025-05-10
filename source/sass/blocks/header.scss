@@ -1,0 +1,50 @@
+.header {
+  background-color: $header-background;
+  position: relative;
+  z-index: 6;
+}
+
+.header__nav {
+  margin: 0 auto;
+}
+
+.header__img-wrapper {
+  color: $white;
+  grid-column: 3 / 4;
+  margin-bottom: 11px;
+}
+
+.header__phone {
+  grid-column: 3 / 4;
+}
+
+.header__burger {
+  position: relative;
+  top: 4px;
+  left: 0;
+
+  .nav--closed & {
+    top: 4px;
+    left: 0;
+  }
+
+  .nav--opened & {
+    width: 30px;
+    top: 0;
+    left: -2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__img-wrapper {
+    grid-column: 2 / 3;
+    margin-bottom: unset;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .header__img-wrapper {
+    grid-column: 1 / 2;
+  }
+}

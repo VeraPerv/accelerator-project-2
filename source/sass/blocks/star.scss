@@ -1,0 +1,13 @@
+.star {
+  display: block;
+  width: 16px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-star-view");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $white;
+
+  &--filled {
+    mask-image: url("/__spritemap#sprite-filled-star-view");
+  }
+}

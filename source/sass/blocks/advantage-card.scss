@@ -1,0 +1,140 @@
+.advantage-card {
+  border: 1px solid $additional;
+  width: 290px;
+  min-height: 239px;
+  padding: 80px 9px 20px;
+  position: relative;
+  text-align: center;
+  background-color: $white;
+
+  &::before {
+    content: "";
+    display: block;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    outline: 1px solid $header-background;
+    top: 27px;
+    left: 132px;
+    background-size: 24px 24px;
+    outline-offset: 8px;
+  }
+
+  &--safety::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--expertise::before {
+    background-image: url("/__spritemap#sprite-expertise-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 1px solid $header-background;
+  }
+
+  &--equipment::before {
+    background-image: url("/__spritemap#sprite-boots-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 1px solid $header-background;
+  }
+
+  &--routes::before {
+    background-image: url("/__spritemap#sprite-routs-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 1px solid $header-background;
+  }
+
+  &--environment::before {
+    background-image: url("/__spritemap#sprite-environment-view");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 24px;
+    top: 26px;
+    left: 131px;
+    background-size: 25px 25px;
+    outline-offset: 8px;
+    outline: 1px solid $header-background;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $primary;
+    font-family: $font-family;
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 10px 0 rgba(28, 51, 116, 0.1);
+    outline: none;
+  }
+}
+
+.advantage-card--environment {
+  h3 {
+    margin-left: -5px;
+  }
+
+  span {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-card {
+    padding: 103px 9px 20px;
+
+    &:last-child {
+      grid-column: 1/ -1;
+      justify-self: center;
+    }
+
+    &::before {
+      width: 48px;
+      height: 48px;
+      top: 29px;
+      left: 137px;
+      outline-offset: -1px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .advantage-card__break {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card {
+    padding: 124px 9px 20px;
+
+    &::before {
+      width: 54px;
+      height: 54px;
+      top: 39px;
+      left: 162px;
+    }
+
+    h3 {
+      width: 100%;
+    }
+
+    &--environment h3 {
+      margin-left: unset;
+    }
+
+    &--environment span {
+      padding: 0;
+    }
+  }
+}

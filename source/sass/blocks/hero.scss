@@ -1,0 +1,139 @@
+.hero {
+  background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.33) 100%);
+  position: relative;
+
+  .swiper-pagination-bullet {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $white;
+    opacity: 1;
+
+    &:hover {
+      background-color: $bullet-bg;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid $white05;
+      outline-offset: 1px;
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: $white05;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+  }
+
+  .swiper-pagination-bullet--disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $white;
+
+    &:focus,
+    &:focus-visible {
+      background-color: $white;
+      outline: none;
+      border: 1px solid $white;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: $white;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: $white;
+  }
+
+  .swiper-slide {
+    display: grid;
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    bottom: 40px;
+    top: unset;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    h3 {
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 24px;
+      width: 500px;
+      justify-self: center;
+    }
+
+    .swiper-slide {
+      height: auto;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 40px;
+      padding: 0 45px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    h3 {
+      font-size: 77px;
+      line-height: 77px;
+      text-align: left;
+      max-width: 780px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 24px;
+      text-align: left;
+      justify-self: left;
+      width: 470px;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      margin: unset;
+      margin-left: auto;
+      bottom: 93px;
+      width: 460px;
+      padding: 0 45px 0 15px;
+      right: 71px;
+    }
+  }
+}

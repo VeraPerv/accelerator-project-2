@@ -1,0 +1,49 @@
+.phone {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-align: right;
+  transition: opacity 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $primary;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+
+  &:active {
+    color: $active;
+    opacity: 1;
+    transition: opacity 0.3s ease, color 0.3s ease;
+  }
+
+  /* Состояние disabled для ссылки .phone */
+  &--disabled {
+    color: $disabled;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .phone {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 7px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .phone {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

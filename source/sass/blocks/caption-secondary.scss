@@ -1,0 +1,21 @@
+.caption-secondary {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary;
+}
+
+@media (min-width: $tablet-width) {
+  .caption-secondary {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .caption-secondary {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}

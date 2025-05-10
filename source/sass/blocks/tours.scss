@@ -1,0 +1,172 @@
+.tours {
+  padding: 38px 15px 20px;
+  position: relative;
+  min-height: 537px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 141px;
+    height: 595px;
+    background-image: url("/img/tours/clouds@1x.png");
+    background-size: 141px 595px;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("/img/tours/clouds@2x.png");
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 37px;
+    height: 35px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 9px;
+    mask-size: 13px 9px;
+  }
+
+  .swiper-button-prev::after {
+    transform: rotate(180deg);
+  }
+
+  .tours__swiper-button {
+    display: none;
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+  }
+}
+
+.tours__wrapper {
+  position: relative;
+}
+
+.tours__caption {
+  margin: 0 auto 40px;
+  width: 290px;
+}
+
+.tours__link {
+  margin: 25px auto 0;
+}
+
+@media (min-width: $tablet-width) {
+  .tours {
+    padding: 60px 45px 40px;
+    min-height: 538px;
+
+    &::after {
+      width: 425px;
+      height: 1630px;
+      background-image: url("/img/tours/clouds-tablet@1x.png");
+      background-size: 425px 1630px;
+      bottom: -900px;
+      right: 0;
+
+
+      @media (resolution >= 2dppx) {
+        background-image: url("/img/tours/clouds-tablet@2x.png");
+      }
+    }
+
+    .tours__swiper-button {
+      display: flex;
+    }
+
+    .tours__swiper-button--next {
+      position: absolute;
+      top: -38px;
+      right: 0;
+    }
+
+    .tours__swiper-button--prev {
+      position: absolute;
+      top: -38px;
+      left: unset;
+      right: 41px;
+    }
+
+    .swiper {
+      position: static;
+    }
+  }
+
+  .tours__wrapper {
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  .tours__caption {
+    width: 678px;
+    padding-right: 150px;
+    margin: 0 auto 35px;
+  }
+
+  .tours__link {
+    margin: 26px auto 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tours {
+    padding: 123px 45px 100px;
+    min-height: 591px;
+
+    &::after {
+      height: 1630px;
+      background-image: url("/img/tours/clouds-desktop@1x.png");
+      bottom: -690px;
+      right: 0;
+      width: 41%;
+      background-position: right center;
+      background-size: cover;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("/img/tours/clouds-desktop@2x.png");
+      }
+    }
+
+    .swiper {
+      width: 1200px;
+      position: static;
+    }
+
+    .tours__swiper-button--prev {
+      top: -66px;
+      right: 41px;
+    }
+
+    .tours__swiper-button--next {
+      top: -66px;
+      right: 0;
+    }
+  }
+
+  .tours__caption {
+    margin: 0 auto 50px;
+    width: 1200px;
+  }
+
+  .tours__wrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tours__link {
+    margin-top: 54px;
+  }
+}

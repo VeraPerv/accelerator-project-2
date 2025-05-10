@@ -1,0 +1,34 @@
+.footer-phone {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .footer-phone {
+    display: block;
+    color: $primary;
+    text-align: right;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus,
+    &:focus-visible {
+      color: $header-background;
+      outline: none;
+    }
+
+    &:active {
+      color: $active;
+    }
+  }
+
+  /* Стиль disabled для ссылки телефона в футере */
+  .footer-phone--disabled {
+    color: $disabled;
+    pointer-events: none;
+  }
+}

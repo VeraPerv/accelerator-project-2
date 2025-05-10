@@ -1,0 +1,33 @@
+.location-badge {
+  display: block;
+  max-width: 90px;
+  min-width: 60px;
+  padding: 8px 12px 8px 34px;
+  background-color: $header-background;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-tours-pin-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 9px 12px;
+    background-color: $white;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location-badge {
+    max-width: 95px;
+  }
+}

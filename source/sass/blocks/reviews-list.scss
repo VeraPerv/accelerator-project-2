@@ -1,0 +1,17 @@
+.reviews-list {
+  margin: 0;
+  list-style-type: none;
+  padding: 16px 15px 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-list {
+    padding: 30px 0 20px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-list {
+    padding: 34px 0 20px 19px;
+  }
+}

@@ -1,0 +1,177 @@
+.education-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 6px;
+  min-height: 219px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: $header-background;
+    position: absolute;
+    height: calc(100% - 24px);
+    left: 6px;
+    top: 13px;
+  }
+}
+
+.education-list__item {
+  padding-left: 57px;
+  width: 258px;
+  min-height: 36px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 12px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $header-background;
+  }
+
+  &--mountain::before {
+    top: unset;
+    bottom: 10px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 1px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--movement::after {
+    background-image: url("/__spritemap#sprite-movement-view");
+  }
+
+  &--equipment::after {
+    background-image: url("/__spritemap#sprite-equipment-view");
+  }
+
+  &--ecology::after {
+    background-image: url("/__spritemap#sprite-ecology-view");
+  }
+
+  &--mountain::after {
+    background-image: url("/__spritemap#sprite-mountain-view");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .education-list {
+    padding: 0;
+    min-height: unset;
+    display: grid;
+    grid-template-columns: 272px 272px;
+    gap: 79px 134px;
+    grid-template-areas:
+      "a b"
+      "c d";
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .education-list__item {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 35px;
+    margin-bottom: unset;
+
+    &--equipment {
+      grid-area: c;
+    }
+
+    &--ecology {
+      grid-area: d;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 1px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .education-list {
+    padding-bottom: 10px;
+    grid-template-areas: none;
+    grid-template-columns: 253px 253px 253px 1fr;
+    gap: unset;
+
+    &::before {
+      display: block;
+      height: 2px;
+      width: calc(100% - 21px);
+      top: unset;
+      left: 20px;
+      bottom: 26px;
+    }
+  }
+
+  .education-list__item {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 45px;
+    width: 248px;
+    margin-bottom: 25px;
+
+    &--ecology,
+    &--equipment {
+      grid-area: unset;
+    }
+
+    &::after {
+      left: 10px;
+    }
+
+    &:nth-child(-n + 4) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: unset;
+        bottom: -15px;
+        display: block;
+        width: 15px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $header-background;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}

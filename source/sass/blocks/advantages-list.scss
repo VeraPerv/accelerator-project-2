@@ -1,0 +1,61 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 15px;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    align-self: center;
+    width: 224px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    h3 {
+      font-size: 16px;
+      line-height: 16px;
+      width: 256px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      width: 284px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    p {
+      width: 343px;
+    }
+  }
+}

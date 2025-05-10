@@ -1,0 +1,53 @@
+.body {
+  font-family: $font-family;
+  color: $primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &--overlay {
+    overflow: hidden;
+  }
+
+  &--overlay::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 56, 63, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+  }
+}
+
+.body__main {
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .body__about {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .body--overlay {
+    overflow: unset;
+
+    &::before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.map {
+  height: 343px;
+  background-color: #eaecef;
+}
+
+.map__map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .map__map {
+    max-height: 100%;
+    height: unset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 324px;
+    width: 600px;
+  }
+
+  .map__map {
+    height: 100%;
+  }
+}

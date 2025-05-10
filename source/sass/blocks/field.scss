@@ -1,0 +1,66 @@
+.field {
+  font-family: $font-family;
+  width: 100%;
+  min-height: 50px;
+  padding: 17px 15px 14px;
+  border: none;
+  background-color: $white;
+  display: block;
+  cursor: pointer;
+  outline: 1px solid $additional;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary;
+
+  &::placeholder {
+    color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0.5;
+  }
+
+  &:placeholder-shown {
+    outline: 1px solid $primary;
+  }
+
+  &:hover {
+    outline: 1px solid $header-background;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $primary;
+
+    &::placeholder {
+      color: $primary;
+    }
+  }
+
+  &:disabled {
+    outline: 1px solid $disabled;
+    pointer-events: none;
+  }
+
+  &--error,
+  &--error:hover,
+  &--error:focus,
+  &--error:focus-visible {
+    outline-color: $error;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    min-height: 56px;
+    padding: 17px 31px 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field {
+    min-height: 56px;
+  }
+}

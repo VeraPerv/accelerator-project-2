@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifetour</title>
+  <meta name="description" content="Сайт Lifetour-организация поездок в горы.">
+  <link rel="icon" href="./assets/favicon-BhRvqQaD.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-YcYytQII.png">
+  <link rel="icon" href="./assets/favicon-dXV0Wo_Q.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon-CnaPDscH.png">
+  <link rel="manifest" href="./assets/manifest--QkkIxFE.webmanifest">
+  <link rel="preload" href="./assets/montserrat-light-DLKnm3q7.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/montserrat-regular-CVgdfXAg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/montserrat-medium-CLx0-BRT.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/montserrat-semi-bold-DrfbmBBD.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/montserrat-bold--KnpE353.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/montserrat-extrabold-By-QY_7Y.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="module" crossorigin src="./assets/index-Cj8-75o5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D5KhQC_r.css">
+</head>
+
+<body class="body">
+  <header class="body__header header" data-test="header">
+    <nav class="header__nav nav nav--closed">
+      <button class="header__burger burger" type="button">
+        <span class="visually-hidden">Кнопка закрытия, открытия мобильного меню.</span>
+      </button>
+      <a class="header__img-wrapper logo" href="#" aria-label="Логотип Lifetour - организации поездок в горы.">
+        <svg width="142" height="42" viewBox="0 0 142 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          role="img">
+          <path d="M15.7314 27.2445L19.4995 23.359L23.7857 27.2445H31.1334L19.4524 16.0044L7.86561 27.2445H15.7314Z"
+            fill="currentColor" />
+          <path
+            d="M26.5178 9.20485L20.9599 14.7555L24.6337 18.4559L26.5178 16.6057L36.8328 26.6894C34.4778 32.8414 28.4489 37.2357 21.3367 37.2357C12.1991 37.2357 4.80428 29.9736 4.80428 21C4.85138 12.0264 12.2462 4.76432 21.3838 4.76432C29.4851 4.76432 36.2676 10.5463 37.6336 18.0859L42.6262 23.2665C42.7204 22.5264 42.7675 21.7401 42.7675 21C42.7675 15.4031 40.5538 10.13 36.5031 6.15198C32.4525 2.17401 27.083 0 21.3838 0C15.6375 0 10.3151 2.17401 6.26441 6.15198C2.21374 10.13 0 15.3568 0 21C0 26.6432 2.21374 31.87 6.26441 35.848C10.3151 39.826 15.6846 42 21.3838 42C27.083 42 32.4525 39.826 36.5031 35.848C38.9995 33.3965 40.7893 30.4824 41.7784 27.2907C41.9668 26.7357 42.1081 26.1344 42.2494 25.5793L37.9162 21.0925L26.5178 9.20485Z"
+            fill="currentColor" />
+          <path d="M60.4115 13.4945H63.5561L61.8408 21.9634H67.1453L66.6371 24.4121H58.1881L60.4115 13.4945Z"
+            fill="currentColor" />
+          <path d="M70.1049 13.4945H73.2495L71.026 24.4121H67.8815L70.1049 13.4945Z" fill="currentColor" />
+          <path
+            d="M78.1389 15.8808L77.6466 18.2826H82.554L82.0617 20.6689H77.1701L76.4078 24.4121H73.2632L75.4867 13.4945H84.1898L83.6975 15.8808H78.1389Z"
+            fill="currentColor" />
+          <path
+            d="M88.2809 15.8808L87.9157 17.7212H92.8549L92.3943 20.0295H87.4392L87.0422 22.0258H92.8707L92.3625 24.4121H83.4529L85.6764 13.4945H94.3795L93.8872 15.8808H88.2809Z"
+            fill="currentColor" />
+          <path
+            d="M98.205 15.9431H94.7904L95.2987 13.4945H105.256L104.748 15.9431H101.35L99.6185 24.4121H96.4739L98.205 15.9431Z"
+            fill="currentColor" />
+          <path
+            d="M110.053 24.6305C108.93 24.6305 107.951 24.4277 107.115 24.0222C106.289 23.6167 105.648 23.05 105.193 22.3222C104.748 21.5943 104.526 20.7625 104.526 19.8267C104.526 18.579 104.817 17.456 105.399 16.4578C105.992 15.4596 106.813 14.6798 107.861 14.1183C108.92 13.5569 110.122 13.2761 111.466 13.2761C112.588 13.2761 113.563 13.4789 114.388 13.8844C115.225 14.2899 115.865 14.8566 116.31 15.5844C116.765 16.3123 116.993 17.1441 116.993 18.0799C116.993 19.3276 116.697 20.4506 116.104 21.4488C115.521 22.4469 114.701 23.2268 113.642 23.7882C112.594 24.3497 111.397 24.6305 110.053 24.6305ZM110.323 22.0726C111.021 22.0726 111.636 21.9011 112.165 21.5579C112.694 21.2148 113.102 20.7573 113.388 20.1854C113.674 19.6032 113.817 18.9637 113.817 18.267C113.817 17.5288 113.584 16.9413 113.118 16.5046C112.663 16.0575 112.022 15.834 111.196 15.834C110.497 15.834 109.883 16.0055 109.354 16.3487C108.825 16.6918 108.417 17.1545 108.131 17.7368C107.845 18.3086 107.702 18.9429 107.702 19.6395C107.702 20.3778 107.93 20.9705 108.385 21.4176C108.851 21.8543 109.497 22.0726 110.323 22.0726Z"
+            fill="currentColor" />
+          <path
+            d="M122.896 24.6305C121.933 24.6305 121.102 24.4745 120.403 24.1626C119.704 23.8402 119.169 23.3827 118.799 22.7901C118.428 22.1974 118.243 21.5007 118.243 20.7001C118.243 20.3674 118.285 19.9827 118.37 19.546L119.609 13.4945H122.753L121.53 19.4992C121.467 19.8111 121.435 20.097 121.435 20.357C121.435 21.5007 122.049 22.0726 123.277 22.0726C123.944 22.0726 124.469 21.8751 124.85 21.4799C125.241 21.0744 125.533 20.4142 125.723 19.4992L126.946 13.4945H130.043L128.788 19.6863C128.111 22.9824 126.147 24.6305 122.896 24.6305Z"
+            fill="currentColor" />
+          <path
+            d="M141.416 16.9725C141.416 17.9707 141.146 18.8337 140.606 19.5616C140.066 20.279 139.309 20.8041 138.335 21.1368L140.225 24.4121H136.938L135.286 21.5111H133.698L133.11 24.4121H129.966L132.189 13.4945H136.938C138.357 13.4945 139.458 13.8012 140.241 14.4147C141.025 15.0281 141.416 15.8808 141.416 16.9725ZM138.24 17.2689C138.24 16.8218 138.087 16.489 137.779 16.2707C137.472 16.0419 137.044 15.9275 136.493 15.9275H134.841L134.174 19.1249H136.048C136.747 19.1249 137.287 18.9637 137.668 18.6414C138.049 18.319 138.24 17.8615 138.24 17.2689Z"
+            fill="currentColor" />
+          <path
+            d="M60.2817 34.7063C59.8987 34.7063 59.5507 34.6231 59.2376 34.4567C58.9283 34.2867 58.6852 34.0553 58.5085 33.7623C58.3354 33.4694 58.2488 33.1403 58.2488 32.775C58.2488 32.4097 58.3354 32.0806 58.5085 31.7877C58.6852 31.4947 58.9283 31.2651 59.2376 31.0987C59.5507 30.9287 59.8987 30.8437 60.2817 30.8437C60.6647 30.8437 61.009 30.9269 61.3147 31.0933C61.624 31.2596 61.8671 31.4911 62.0439 31.7877C62.2206 32.0806 62.309 32.4097 62.309 32.775C62.309 33.1403 62.2206 33.4712 62.0439 33.7678C61.8671 34.0607 61.624 34.2904 61.3147 34.4567C61.009 34.6231 60.6647 34.7063 60.2817 34.7063ZM60.2817 34.3482C60.5873 34.3482 60.8635 34.2813 61.1103 34.1475C61.357 34.0101 61.5504 33.822 61.6903 33.5833C61.8303 33.341 61.9002 33.0716 61.9002 32.775C61.9002 32.4784 61.8303 32.2108 61.6903 31.9721C61.5504 31.7298 61.357 31.5417 61.1103 31.4079C60.8635 31.2705 60.5873 31.2018 60.2817 31.2018C59.976 31.2018 59.698 31.2705 59.4475 31.4079C59.2008 31.5417 59.0056 31.7298 58.862 31.9721C58.7221 32.2108 58.6521 32.4784 58.6521 32.775C58.6521 33.0716 58.7221 33.341 58.862 33.5833C59.0056 33.822 59.2008 34.0101 59.4475 34.1475C59.698 34.2813 59.976 34.3482 60.2817 34.3482Z"
+            fill="currentColor" />
+          <path
+            d="M64.6876 31.7985C64.9601 31.7985 65.2068 31.86 65.4278 31.983C65.6488 32.1023 65.8219 32.2723 65.9471 32.4929C66.0723 32.7135 66.1349 32.9649 66.1349 33.247C66.1349 33.5327 66.0723 33.7858 65.9471 34.0065C65.8219 34.2271 65.6488 34.3989 65.4278 34.5218C65.2105 34.6412 64.9638 34.7008 64.6876 34.7008C64.4519 34.7008 64.2383 34.6538 64.0468 34.5598C63.859 34.4622 63.7043 34.3211 63.5828 34.1367V35.7262H63.1906V31.8202H63.5662V32.3844C63.684 32.1963 63.8387 32.0517 64.0302 31.9504C64.2254 31.8492 64.4445 31.7985 64.6876 31.7985ZM64.66 34.3591C64.8625 34.3591 65.0466 34.3139 65.2124 34.2235C65.3781 34.1294 65.507 33.9974 65.5991 33.8274C65.6948 33.6575 65.7427 33.464 65.7427 33.247C65.7427 33.03 65.6948 32.8383 65.5991 32.6719C65.507 32.5019 65.3781 32.3699 65.2124 32.2759C65.0466 32.1819 64.8625 32.1349 64.66 32.1349C64.4537 32.1349 64.2678 32.1819 64.102 32.2759C63.94 32.3699 63.8111 32.5019 63.7154 32.6719C63.6233 32.8383 63.5772 33.03 63.5772 33.247C63.5772 33.464 63.6233 33.6575 63.7154 33.8274C63.8111 33.9974 63.94 34.1294 64.102 34.2235C64.2678 34.3139 64.4537 34.3591 64.66 34.3591Z"
+            fill="currentColor" />
+          <path d="M69.0325 32.162H67.3698V34.6737H66.9776V31.8202H69.0325V32.162Z" fill="currentColor" />
+          <path
+            d="M70.5992 31.7985C70.9785 31.7985 71.2694 31.8925 71.472 32.0806C71.6745 32.2651 71.7758 32.5399 71.7758 32.9052V34.6737H71.4002V34.2289C71.3118 34.3772 71.1811 34.4929 71.008 34.5761C70.8386 34.6593 70.636 34.7008 70.4003 34.7008C70.0762 34.7008 69.8185 34.6249 69.627 34.473C69.4355 34.3211 69.3397 34.1204 69.3397 33.8708C69.3397 33.6285 69.4281 33.4332 69.6049 33.2849C69.7853 33.1367 70.0707 33.0625 70.4611 33.0625H71.3836V32.8889C71.3836 32.643 71.3136 32.4567 71.1737 32.3302C71.0337 32.2 70.8294 32.1349 70.5605 32.1349C70.3764 32.1349 70.1996 32.1656 70.0302 32.2271C69.8608 32.285 69.7153 32.3663 69.5938 32.4712L69.417 32.1837C69.5643 32.0607 69.7411 31.9667 69.9473 31.9016C70.1536 31.8329 70.3709 31.7985 70.5992 31.7985ZM70.4611 34.3971C70.682 34.3971 70.8717 34.3482 71.0301 34.2506C71.1884 34.1493 71.3063 34.0047 71.3836 33.8166V33.35H70.4721C69.975 33.35 69.7264 33.52 69.7264 33.86C69.7264 34.0263 69.7908 34.1584 69.9197 34.256C70.0486 34.35 70.2291 34.3971 70.4611 34.3971Z"
+            fill="currentColor" />
+          <path
+            d="M72.8199 31.8202H73.2121V33.0842H75.0406V31.8202H75.4328V34.6737H75.0406V33.4151H73.2121V34.6737H72.8199V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M76.5476 31.8202H76.9398V34.0878L78.8787 31.8202H79.2267V34.6737H78.8345V32.4061L76.9011 34.6737H76.5476V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M81.7056 33.1873C81.9118 33.2343 82.0701 33.3157 82.1806 33.4314C82.2948 33.5471 82.3519 33.6882 82.3519 33.8546C82.3519 34.0209 82.293 34.1692 82.1751 34.2994C82.0609 34.4296 81.9044 34.5309 81.7056 34.6032C81.5067 34.6719 81.2876 34.7063 81.0482 34.7063C80.8383 34.7063 80.632 34.6773 80.4295 34.6195C80.227 34.558 80.0502 34.4694 79.8992 34.3537L80.0318 34.0661C80.1643 34.1638 80.319 34.2397 80.4958 34.294C80.6726 34.3482 80.8512 34.3754 81.0316 34.3754C81.3005 34.3754 81.5196 34.3265 81.689 34.2289C81.8621 34.1276 81.9486 33.992 81.9486 33.822C81.9486 33.6701 81.8786 33.5526 81.7387 33.4694C81.5988 33.3826 81.4073 33.3392 81.1642 33.3392H80.667V33.0571H81.1421C81.3594 33.0571 81.5343 33.0173 81.6669 32.9377C81.7995 32.8546 81.8658 32.7443 81.8658 32.6068C81.8658 32.4549 81.7903 32.3356 81.6393 32.2488C81.492 32.162 81.2986 32.1186 81.0592 32.1186C80.7462 32.1186 80.4369 32.1963 80.1312 32.3519L80.0207 32.0535C80.3669 31.8763 80.726 31.7877 81.0979 31.7877C81.3189 31.7877 81.5177 31.8202 81.6945 31.8853C81.875 31.9468 82.0149 32.0354 82.1143 32.1511C82.2175 32.2669 82.269 32.4007 82.269 32.5526C82.269 32.6972 82.2175 32.8256 82.1143 32.9377C82.0149 33.0499 81.8786 33.133 81.7056 33.1873Z"
+            fill="currentColor" />
+          <path
+            d="M84.2421 31.7985C84.6214 31.7985 84.9123 31.8925 85.1149 32.0806C85.3174 32.2651 85.4187 32.5399 85.4187 32.9052V34.6737H85.0431V34.2289C84.9547 34.3772 84.824 34.4929 84.6509 34.5761C84.4815 34.6593 84.2789 34.7008 84.0432 34.7008C83.7191 34.7008 83.4614 34.6249 83.2699 34.473C83.0784 34.3211 82.9826 34.1204 82.9826 33.8708C82.9826 33.6285 83.071 33.4332 83.2478 33.2849C83.4282 33.1367 83.7136 33.0625 84.104 33.0625H85.0265V32.8889C85.0265 32.643 84.9565 32.4567 84.8166 32.3302C84.6766 32.2 84.4723 32.1349 84.2034 32.1349C84.0193 32.1349 83.8425 32.1656 83.6731 32.2271C83.5037 32.285 83.3582 32.3663 83.2367 32.4712L83.0599 32.1837C83.2073 32.0607 83.384 31.9667 83.5902 31.9016C83.7965 31.8329 84.0138 31.7985 84.2421 31.7985ZM84.104 34.3971C84.325 34.3971 84.5146 34.3482 84.673 34.2506C84.8313 34.1493 84.9492 34.0047 85.0265 33.8166V33.35H84.115C83.6179 33.35 83.3693 33.52 83.3693 33.86C83.3693 34.0263 83.4337 34.1584 83.5626 34.256C83.6915 34.35 83.872 34.3971 84.104 34.3971Z"
+            fill="currentColor" />
+          <path
+            d="M89.49 34.3374V35.3898H89.1199V34.6737H86.4628V31.8202H86.855V34.3374H88.6282V31.8202H89.0204V34.3374H89.49Z"
+            fill="currentColor" />
+          <path
+            d="M90.239 31.8202H90.6312V34.0878L92.5702 31.8202H92.9182V34.6737H92.526V32.4061L90.5926 34.6737H90.239V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M96.2739 31.8202V34.6737H95.9148V33.7298H94.8929L94.219 34.6737H93.7936L94.5173 33.6755C94.2926 33.6141 94.1195 33.5092 93.998 33.3609C93.8765 33.2126 93.8157 33.0245 93.8157 32.7967C93.8157 32.4784 93.9262 32.2361 94.1472 32.0698C94.3681 31.9034 94.6701 31.8202 95.0531 31.8202H96.2739ZM94.2134 32.8076C94.2134 33.2307 94.4878 33.4423 95.0365 33.4423H95.9148V32.162H95.0641C94.497 32.162 94.2134 32.3772 94.2134 32.8076Z"
+            fill="currentColor" />
+          <path d="M101.445 31.8202V34.6737H101.053V32.162H99.2302V34.6737H98.838V31.8202H101.445Z"
+            fill="currentColor" />
+          <path
+            d="M103.759 34.7008C103.479 34.7008 103.227 34.6394 103.002 34.5164C102.778 34.3898 102.601 34.2162 102.472 33.9956C102.343 33.775 102.279 33.5254 102.279 33.247C102.279 32.9685 102.343 32.7189 102.472 32.4983C102.601 32.2777 102.778 32.1059 103.002 31.983C103.227 31.86 103.479 31.7985 103.759 31.7985C104.039 31.7985 104.291 31.86 104.516 31.983C104.74 32.1059 104.915 32.2777 105.041 32.4983C105.169 32.7189 105.234 32.9685 105.234 33.247C105.234 33.5254 105.169 33.775 105.041 33.9956C104.915 34.2162 104.74 34.3898 104.516 34.5164C104.291 34.6394 104.039 34.7008 103.759 34.7008ZM103.759 34.3591C103.965 34.3591 104.149 34.3139 104.311 34.2235C104.477 34.1294 104.606 33.9974 104.698 33.8274C104.79 33.6575 104.836 33.464 104.836 33.247C104.836 33.03 104.79 32.8365 104.698 32.6665C104.606 32.4965 104.477 32.3663 104.311 32.2759C104.149 32.1819 103.965 32.1349 103.759 32.1349C103.553 32.1349 103.367 32.1819 103.201 32.2759C103.039 32.3663 102.91 32.4965 102.814 32.6665C102.722 32.8365 102.676 33.03 102.676 33.247C102.676 33.464 102.722 33.6575 102.814 33.8274C102.91 33.9974 103.039 34.1294 103.201 34.2235C103.367 34.3139 103.553 34.3591 103.759 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M107.787 34.6737L106.865 33.4802L105.936 34.6737H105.495L106.644 33.209L105.55 31.8202H105.992L106.865 32.9377L107.737 31.8202H108.168L107.074 33.209L108.234 34.6737H107.787Z"
+            fill="currentColor" />
+          <path
+            d="M109.974 34.7008C109.694 34.7008 109.441 34.6394 109.217 34.5164C108.992 34.3898 108.815 34.2162 108.686 33.9956C108.558 33.775 108.493 33.5254 108.493 33.247C108.493 32.9685 108.558 32.7189 108.686 32.4983C108.815 32.2777 108.992 32.1059 109.217 31.983C109.441 31.86 109.694 31.7985 109.974 31.7985C110.253 31.7985 110.506 31.86 110.73 31.983C110.955 32.1059 111.13 32.2777 111.255 32.4983C111.384 32.7189 111.448 32.9685 111.448 33.247C111.448 33.5254 111.384 33.775 111.255 33.9956C111.13 34.2162 110.955 34.3898 110.73 34.5164C110.506 34.6394 110.253 34.7008 109.974 34.7008ZM109.974 34.3591C110.18 34.3591 110.364 34.3139 110.526 34.2235C110.692 34.1294 110.821 33.9974 110.913 33.8274C111.005 33.6575 111.051 33.464 111.051 33.247C111.051 33.03 111.005 32.8365 110.913 32.6665C110.821 32.4965 110.692 32.3663 110.526 32.2759C110.364 32.1819 110.18 32.1349 109.974 32.1349C109.767 32.1349 109.581 32.1819 109.416 32.2759C109.254 32.3663 109.125 32.4965 109.029 32.6665C108.937 32.8365 108.891 33.03 108.891 33.247C108.891 33.464 108.937 33.6575 109.029 33.8274C109.125 33.9974 109.254 34.1294 109.416 34.2235C109.581 34.3139 109.767 34.3591 109.974 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M115.104 34.3374V35.3627H114.734V34.6737H112.132V35.3627H111.762V34.3374H111.928C112.123 34.3265 112.256 34.1855 112.326 33.9142C112.396 33.643 112.444 33.2632 112.469 32.775L112.508 31.8202H114.651V34.3374H115.104ZM112.828 32.7967C112.81 33.2018 112.775 33.5363 112.723 33.8003C112.672 34.0607 112.58 34.2397 112.447 34.3374H114.259V32.162H112.862L112.828 32.7967Z"
+            fill="currentColor" />
+          <path
+            d="M117.067 34.7008C116.788 34.7008 116.535 34.6394 116.311 34.5164C116.086 34.3898 115.909 34.2162 115.78 33.9956C115.651 33.775 115.587 33.5254 115.587 33.247C115.587 32.9685 115.651 32.7189 115.78 32.4983C115.909 32.2777 116.086 32.1059 116.311 31.983C116.535 31.86 116.788 31.7985 117.067 31.7985C117.347 31.7985 117.6 31.86 117.824 31.983C118.049 32.1059 118.224 32.2777 118.349 32.4983C118.478 32.7189 118.542 32.9685 118.542 33.247C118.542 33.5254 118.478 33.775 118.349 33.9956C118.224 34.2162 118.049 34.3898 117.824 34.5164C117.6 34.6394 117.347 34.7008 117.067 34.7008ZM117.067 34.3591C117.274 34.3591 117.458 34.3139 117.62 34.2235C117.786 34.1294 117.914 33.9974 118.006 33.8274C118.099 33.6575 118.145 33.464 118.145 33.247C118.145 33.03 118.099 32.8365 118.006 32.6665C117.914 32.4965 117.786 32.3663 117.62 32.2759C117.458 32.1819 117.274 32.1349 117.067 32.1349C116.861 32.1349 116.675 32.1819 116.509 32.2759C116.347 32.3663 116.219 32.4965 116.123 32.6665C116.031 32.8365 115.985 33.03 115.985 33.247C115.985 33.464 116.031 33.6575 116.123 33.8274C116.219 33.9974 116.347 34.1294 116.509 34.2235C116.675 34.3139 116.861 34.3591 117.067 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M121.231 33.1981C121.625 33.2886 121.822 33.5218 121.822 33.898C121.822 34.1475 121.728 34.3392 121.54 34.473C121.353 34.6068 121.073 34.6737 120.701 34.6737H119.381V31.8202H120.662C120.994 31.8202 121.253 31.8835 121.441 32.0101C121.629 32.1367 121.723 32.3175 121.723 32.5526C121.723 32.7081 121.679 32.8419 121.59 32.954C121.505 33.0625 121.386 33.1439 121.231 33.1981ZM119.762 33.0896H120.635C120.859 33.0896 121.03 33.0481 121.148 32.9649C121.27 32.8817 121.331 32.7605 121.331 32.6014C121.331 32.4423 121.27 32.3229 121.148 32.2434C121.03 32.1638 120.859 32.124 120.635 32.124H119.762V33.0896ZM120.684 34.3699C120.935 34.3699 121.122 34.3301 121.248 34.2506C121.373 34.171 121.436 34.0462 121.436 33.8763C121.436 33.7063 121.378 33.5815 121.264 33.5019C121.15 33.4188 120.97 33.3772 120.723 33.3772H119.762V34.3699H120.684Z"
+            fill="currentColor" />
+          <path
+            d="M126.038 33.1981C126.432 33.2886 126.629 33.5218 126.629 33.898C126.629 34.1475 126.535 34.3392 126.347 34.473C126.159 34.6068 125.879 34.6737 125.507 34.6737H124.187V31.8202H125.469C125.8 31.8202 126.06 31.8835 126.248 32.0101C126.435 32.1367 126.529 32.3175 126.529 32.5526C126.529 32.7081 126.485 32.8419 126.397 32.954C126.312 33.0625 126.192 33.1439 126.038 33.1981ZM124.568 33.0896H125.441C125.666 33.0896 125.837 33.0481 125.955 32.9649C126.076 32.8817 126.137 32.7605 126.137 32.6014C126.137 32.4423 126.076 32.3229 125.955 32.2434C125.837 32.1638 125.666 32.124 125.441 32.124H124.568V33.0896ZM125.491 34.3699C125.741 34.3699 125.929 34.3301 126.054 34.2506C126.179 34.171 126.242 34.0462 126.242 33.8763C126.242 33.7063 126.185 33.5815 126.071 33.5019C125.957 33.4188 125.776 33.3772 125.529 33.3772H124.568V34.3699H125.491Z"
+            fill="currentColor" />
+          <path d="M131.049 32.162H129.386V34.6737H128.994V31.8202H131.049V32.162Z" fill="currentColor" />
+          <path
+            d="M132.679 34.7008C132.399 34.7008 132.147 34.6394 131.923 34.5164C131.698 34.3898 131.521 34.2162 131.392 33.9956C131.263 33.775 131.199 33.5254 131.199 33.247C131.199 32.9685 131.263 32.7189 131.392 32.4983C131.521 32.2777 131.698 32.1059 131.923 31.983C132.147 31.86 132.399 31.7985 132.679 31.7985C132.959 31.7985 133.211 31.86 133.436 31.983C133.661 32.1059 133.836 32.2777 133.961 32.4983C134.09 32.7189 134.154 32.9685 134.154 33.247C134.154 33.5254 134.09 33.775 133.961 33.9956C133.836 34.2162 133.661 34.3898 133.436 34.5164C133.211 34.6394 132.959 34.7008 132.679 34.7008ZM132.679 34.3591C132.886 34.3591 133.07 34.3139 133.232 34.2235C133.397 34.1294 133.526 33.9974 133.618 33.8274C133.71 33.6575 133.757 33.464 133.757 33.247C133.757 33.03 133.71 32.8365 133.618 32.6665C133.526 32.4965 133.397 32.3663 133.232 32.2759C133.07 32.1819 132.886 32.1349 132.679 32.1349C132.473 32.1349 132.287 32.1819 132.121 32.2759C131.959 32.3663 131.83 32.4965 131.735 32.6665C131.643 32.8365 131.597 33.03 131.597 33.247C131.597 33.464 131.643 33.6575 131.735 33.8274C131.83 33.9974 131.959 34.1294 132.121 34.2235C132.287 34.3139 132.473 34.3591 132.679 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M136.49 31.7985C136.762 31.7985 137.009 31.86 137.23 31.983C137.451 32.1023 137.624 32.2723 137.749 32.4929C137.874 32.7135 137.937 32.9649 137.937 33.247C137.937 33.5327 137.874 33.7858 137.749 34.0065C137.624 34.2271 137.451 34.3989 137.23 34.5218C137.012 34.6412 136.766 34.7008 136.49 34.7008C136.254 34.7008 136.04 34.6538 135.849 34.5598C135.661 34.4622 135.506 34.3211 135.385 34.1367V35.7262H134.992V31.8202H135.368V32.3844C135.486 32.1963 135.641 32.0517 135.832 31.9504C136.027 31.8492 136.246 31.7985 136.49 31.7985ZM136.462 34.3591C136.664 34.3591 136.849 34.3139 137.014 34.2235C137.18 34.1294 137.309 33.9974 137.401 33.8274C137.497 33.6575 137.545 33.464 137.545 33.247C137.545 33.03 137.497 32.8383 137.401 32.6719C137.309 32.5019 137.18 32.3699 137.014 32.2759C136.849 32.1819 136.664 32.1349 136.462 32.1349C136.256 32.1349 136.07 32.1819 135.904 32.2759C135.742 32.3699 135.613 32.5019 135.517 32.6719C135.425 32.8383 135.379 33.03 135.379 33.247C135.379 33.464 135.425 33.6575 135.517 33.8274C135.613 33.9974 135.742 34.1294 135.904 34.2235C136.07 34.3139 136.256 34.3591 136.462 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M140 32.8293C140.365 32.8329 140.643 32.9124 140.834 33.0679C141.026 33.2235 141.122 33.4477 141.122 33.7406C141.122 34.0444 141.019 34.2777 140.812 34.4404C140.606 34.6032 140.311 34.6828 139.928 34.6791L138.779 34.6737V31.8202H139.172V32.8184L140 32.8293ZM141.608 31.8202H142V34.6737H141.608V31.8202ZM139.906 34.3862C140.175 34.3898 140.378 34.3374 140.514 34.2289C140.654 34.1168 140.724 33.954 140.724 33.7406C140.724 33.5309 140.656 33.3754 140.52 33.2741C140.383 33.1728 140.179 33.1204 139.906 33.1168L139.172 33.1059V34.3754L139.906 34.3862Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+      <!-- Для состояния disabled для nav-list__link добавить nav-list__link два тире disabled -->
+      <ul class="nav__list nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#tours">Туры</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#training">Обучение</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#about">О нас</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#reviews">Отзывы</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#gallery">Фотографии</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+      <!-- Для соcтояния disabled ссылки phone добавить: phone два тире disabled -->
+      <a class="header__phone phone" href="tel:88000000000">8 800 000-00-00</a>
+    </nav>
+  </header>
+  <main class="body__main main">
+    <h1 class="visually-hidden">Сайт компании Lifetour.</h1>
+    <section class="main__hero hero" data-test="hero">
+      <h2 class="visually-hidden">Промо-блок.</h2>
+      <div class="swiper">
+        <ol class="swiper-wrapper hero-list">
+          <li class="swiper-slide hero-list__item">
+            <div class="hero-list__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./assets/hero-caucasus-desktop@1x-BDW1oLBy.webp, ./assets/hero-caucasus-desktop@2x-DoDA9F5F.webp 2x"
+                  width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./assets/hero-caucasus-tablet@1x-Btj-H5jB.webp, ./assets/hero-caucasus-tablet@2x-DFIel5WJ.webp 2x" width="768"
+                  height="1034">
+                <source type="image/webp" srcset="./assets/hero-caucasus@1x-67g9PSPG.webp, ./assets/hero-caucasus@2x-BUEYcuug.webp 2x"
+                  width="320" height="568">
+                <source media="(min-width: 1440px)"
+                  srcset="./assets/hero-caucasus-desktop@1x-BU3weFhy.jpg, ./assets/hero-caucasus-desktop@2x-Dm-Tirwg.jpg 2x"
+                  type="image/jpg" width="1440" height="800">
+                <source media="(min-width: 768px)"
+                  srcset="./assets/hero-caucasus-tablet@1x-BekbqGGl.jpg, ./assets/hero-caucasus-tablet@2x-DgvYEsWA.jpg 2x"
+                  type="image/jpg" width="768" height="1034">
+                <img class="hero-list__item-image" width="320" height="568" src="./assets/hero-caucasus@1x-BVfgMi8i.jpg"
+                  srcset="./assets/hero-caucasus@2x-B25OzVTG.jpg 2x" alt="Горы Кавказа." loading="lazy">
+              </picture>
+            </div>
+            <div class="hero-list__text-wrapper">
+              <h3>Захватывающие вершины Кавказа</h3>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                горы Чегет.</p>
+              <!-- Для состояние disabled добавить на button класс: button два тире disabled -->
+              <a class="hero-list__button button" href="#">Смотреть тур</a>
+              <ul class="hero-list__badges badges">
+                <li class="badges__item badge badge--duration">6 дней/5 ночей</li>
+                <li class="badges__item badge badge--complexity">Высокая сложность</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide hero-list__item">
+            <div class="hero-list__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./assets/hero-kamchatka-desktop@1x-5IDWFveZ.webp, ./assets/hero-kamchatka-desktop@2x-Burx2QDH.webp 2x"
+                  width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./assets/hero-kamchatka-tablet@1x-BSXfla0x.webp, ./assets/hero-kamchatka-tablet@2x-CAWee4Ex.webp 2x" width="768"
+                  height="1034">
+                <source type="image/webp" srcset="./assets/hero-kamchatka@1x-BQhHAiDY.webp, ./assets/hero-kamchatka@2x-B_A28rBp.webp 2x"
+                  width="320" height="568">
+                <source media="(min-width: 1440px)"
+                  srcset="./assets/hero-kamchatka-desktop@1x-DCZiCmzO.jpg, ./assets/hero-kamchatka-desktop@2x-Db9hEkUA.jpg 2x"
+                  type="image/jpg" width="1440" height="800">
+                <source media="(min-width: 768px)"
+                  srcset="./assets/hero-kamchatka-tablet@1x-BEYM4AwD.jpg, ./assets/hero-kamchatka-tablet@2x-yywlmq86.jpg 2x"
+                  type="image/jpg" width="768" height="1034">
+                <img class="hero-list__item-image" width="320" height="568" src="./assets/hero-kamchatka@1x-B5Wv31a9.jpg"
+                  srcset="./assets/hero-kamchatka@2x-C4k-P60C.jpg 2x" alt="Камчатка." loading="lazy">
+              </picture>
+            </div>
+            <div class="hero-list__text-wrapper hero-list__text-wrapper--kamchatka">
+              <h3>Невероятная природа&nbsp;Камчатки</h3>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                уголков дикой природы&nbsp;в мире.</p>
+              <a class="hero-list__button button" href="#">Смотреть тур</a>
+              <ul class="hero-list__badges badges">
+                <li class="badges__item badge badge--duration">9 дней/10 ночей</li>
+                <li class="badges__item badge badge--complexity">Средняя сложность</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide hero-list__item">
+            <div class="hero-list__img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="./assets/hero-altai-desktop@1x-CD6A3_e6.webp, ./assets/hero-altai-desktop@2x-1r8GN1pT.webp 2x" width="1440"
+                  height="800">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./assets/hero-altai-tablet@1x-1AXfdTde.webp, ./assets/hero-altai-tablet@2x-ZBzifU2R.webp 2x" width="768"
+                  height="1034">
+                <source type="image/webp" srcset="./assets/hero-altai@1x-DsHGmICM.webp, ./assets/hero-altai@2x-0NsQiGrJ.webp 2x"
+                  width="320" height="568">
+                <source media="(min-width: 1440px)"
+                  srcset="./assets/hero-altai-desktop@1x-DZ8wB1OF.jpg, ./assets/hero-altai-desktop@2x-BDkY8Bou.jpg 2x" type="image/jpg"
+                  width="1440" height="800">
+                <source media="(min-width: 768px)"
+                  srcset="./assets/hero-altai-tablet@1x-BQEQid1X.jpg, ./assets/hero-altai-tablet@2x-CO-4Kla0.jpg 2x" type="image/jpg"
+                  width="768" height="1034">
+                <img class="hero-list__item-image" width="320" height="568" src="./assets/hero-altai@1x-kqdTK2oq.jpg"
+                  srcset="./assets/hero-altai@2x-CvXohMOi.jpg 2x" alt="Алтай." loading="lazy">
+              </picture>
+            </div>
+            <div class="hero-list__text-wrapper hero-list__text-wrapper--altay">
+              <h3>Магические пейзажи Алтайского Края</h3>
+              <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих
+                дух ландшафтов Алтайских гор.</p>
+              <a class="hero-list__button button" href="#">Смотреть тур</a>
+              <ul class="hero-list__badges badges">
+                <li class="badges__item badge badge--duration">8 дней/7 ночей</li>
+                <li class="badges__item badge badge--complexity">Лёгкая сложность</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+        <div class="swiper-pagination">
+          <span class="swiper-pagination-bullet" tabindex="0">
+            <span class="visually-hidden">Показать первый слайд.</span>
+          </span>
+          <span class="swiper-pagination-bullet" tabindex="0">
+            <span class="visually-hidden">Показать второй слайд.</span>
+          </span>
+          <span class="swiper-pagination-bullet" tabindex="0">
+            <span class="visually-hidden">Показать третий слайд.</span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="main__tours tours" data-test="tours" id="tours">
+      <h2 class="tours__caption caption" data-caption="Ближайшие туры">Ближайшие туры</h2>
+      <div class="tours__wrapper">
+        <div class="swiper">
+          <button class="tours__swiper-button swiper-button-prev tours__swiper-button--prev " type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="tours__swiper-button swiper-button-next  tours__swiper-button--next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+          <ul class="swiper-wrapper tours-list">
+            <li class="swiper-slide tours-list__item tours-card">
+              <div class="tours-card__wrapper" tabindex="0">
+                <div class="tours-card__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./assets/elbrus-desktop@1x-BSbeDK7y.webp, ./assets/elbrus-desktop@2x-Y_UAWr55.webp 2x" width="380"
+                      height="416">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./assets/elbrus-tablet@1x-0_p8-u3f.webp, ./assets/elbrus-tablet@2x-C2oibAyg.webp 2x" width="330"
+                      height="416">
+                    <source type="image/webp"
+                      srcset="./assets/elbrus-mobile@1x-BcoqmmI4.webp, ./assets/elbrus-mobile@2x-D7dVsG6U.webp 2x" width="290"
+                      height="416">
+                    <source media="(min-width: 1440px)"
+                      srcset="./assets/elbrus-desktop@1x-27tYAUVd.jpg, ./assets/elbrus-desktop@2x-aNsevpmr.jpg 2x" type="image/jpg"
+                      width="380" height="416">
+                    <source media="(min-width: 768px)"
+                      srcset="./assets/elbrus-tablet@1x-BssvviQE.jpg, ./assets/elbrus-tablet@2x-B4wkwqYV.jpg 2x" type="image/jpg"
+                      width="330" height="416">
+                    <img class="tours-card__img" width="290" height="416" src="./assets/elbrus-mobile@1x-BSr5KvnC.jpg"
+                      srcset="./assets/elbrus-mobile@2x-r3v-MAzv.jpg 2x" alt="Эльбрус." loading="lazy">
+                  </picture>
+                </div>
+                <div class="tours-card__text-wrapper">
+                  <div class="tours-card__badges-box">
+                    <span class="tours-card__location location-badge">Кавказ</span>
+                    <ul class="tours-card__list">
+                      <li class="tours-card__days tours-badge tours-badge--days">4 дня</li>
+                      <li class="tours-card__nights tours-badge tours-badge--nights">3 ночи</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours-card__caption tours-caption">Путешествие вокруг&nbsp;Эльбруса</h3>
+                  <div class="tours-card__details tours-details">
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Сложность:</dt>
+                      <dd class="tours-details__stars">
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star" aria-hidden="true"></span>
+                      </dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Даты набора:</dt>
+                      <dd class="tours-details__datum">12.06–19.06</dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Группа:</dt>
+                      <dd class="tours-details__quantity">до 15 чел.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide tours-list__item tours-card">
+              <div class="tours-card__wrapper" tabindex="0">
+                <div class="tours-card__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./assets/belukha-desktop@1x-n6xYm2fO.webp, ./assets/belukha-desktop@2x-Djaah2sL.webp 2x" width="380"
+                      height="416">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./assets/belukha-tablet@1x-BL54Mjtg.webp, ./assets/belukha-tablet@2x-DxJEL-rT.webp 2x" width="330"
+                      height="416">
+                    <source type="image/webp"
+                      srcset="./assets/belukha-mobile@1x-BgFVJI4j.webp, ./assets/belukha-mobile@2x-CwaybnMi.webp 2x" width="290"
+                      height="416">
+                    <source media="(min-width: 1440px)"
+                      srcset="./assets/belukha-desktop@1x-DX7WqBVc.jpg, ./assets/belukha-desktop@2x-D-ptHsbH.jpg 2x" type="image/jpg"
+                      width="380" height="416">
+                    <source media="(min-width: 768px)"
+                      srcset="./assets/belukha-tablet@1x-DfhRawUR.jpg, ./assets/belukha-tablet@2x-bybTSBJW.jpg 2x" type="image/jpg"
+                      width="330" height="416">
+                    <img class="tours-card__img" width="290" height="416" src="./assets/belukha-mobile@1x-Csu93BGT.jpg"
+                      srcset="./assets/belukha-mobile@2x-Db5uExr9.jpg 2x" alt="Белуха." loading="lazy">
+                  </picture>
+                </div>
+                <div class="tours-card__text-wrapper">
+                  <div class="tours-card__badges-box">
+                    <span class="tours-card__location location-badge">Алтай</span>
+                    <ul class="tours-card__list">
+                      <li class="tours-card__days tours-badge tours-badge--days">14 дней</li>
+                      <li class="tours-card__nights tours-badge tours-badge--nights">13 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours-card__caption tours-caption">Путь к подножию Белухи</h3>
+                  <div class="tours-card__details tours-details">
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Сложность:</dt>
+                      <dd class="tours-details__stars">
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star star--filled" aria-hidden="true"></span>
+                        <span class="star" aria-hidden="true"></span>
+                        <span class="star" aria-hidden="true"></span>
+                      </dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Даты набора:</dt>
+                      <dd class="tours-details__datum">14.06–23.06</dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Группа:</dt>
+                      <dd class="tours-details__quantity">до 25 чел.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide tours-list__item tours-card">
+              <div class="tours-card__wrapper" tabindex="0">
+                <div class="tours-card__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./assets/fisht-desktop@1x-DLGeZP3J.webp, ./assets/fisht-desktop@2x-DuvpKXh_.webp 2x" width="380"
+                      height="416">
+                    <source type="image/webp" srcset="./assets/fisht-mobile@1x-CZ4FvlYs.webp, ./assets/fisht-mobile@2x-BIR5w7s8.webp 2x"
+                      width="290" height="416">
+                    <source media="(min-width: 1440px)"
+                      srcset="./assets/fisht-desktop@1x-C5tldKFX.jpg, ./assets/fisht-desktop@2x-jTiQaNTL.jpg 2x" type="image/jpg"
+                      width="380" height="416">
+                    <img class="tours-card__img" width="290" height="416" src="./assets/fisht-mobile@1x-DRCUrW4I.jpg"
+                      srcset="./assets/fisht-mobile@2x-6-C6-fqv.jpg 2x" alt="Фишт." loading="lazy">
+                  </picture>
+                </div>
+                <div class="tours-card__text-wrapper">
+                  <div class="tours-card__badges-box">
+                    <span class="tours-card__location location-badge">Адыгея</span>
+                    <ul class="tours-card__list">
+                      <li class="tours-card__days tours-badge tours-badge--days">7 дней</li>
+                      <li class="tours-card__nights tours-badge tours-badge--nights">6 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours-card__caption tours-caption">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                  <div class="tours-card__details tours-details">
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Сложность:</dt>
+                      <dd class="tours-details__stars">
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star"></span>
+                      </dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Даты набора:</dt>
+                      <dd class="tours-details__datum">15.07–19.07</dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Группа:</dt>
+                      <dd class="tours-details__quantity">до 22 чел.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide tours-list__item tours-card">
+              <div class="tours-card__wrapper" tabindex="0">
+                <div class="tours-card__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./assets/manaraga-desktop@1x-BQDEUvGN.webp, ./assets/manaraga-desktop@2x-R03a8jM0.webp 2x" width="380"
+                      height="416">
+                    <source type="image/webp"
+                      srcset="./assets/manaraga-mobile@1x-BJ-ZIxIw.webp, ./assets/manaraga-mobile@2x-DAb7hHHN.webp 2x" width="290"
+                      height="416">
+                    <source media="(min-width: 1440px)"
+                      srcset="./assets/manaraga-desktop@1x-DSKsiR_q.jpg, ./assets/manaraga-desktop@2x-VldPQu-z.jpg 2x" type="image/jpg"
+                      width="380" height="416">
+                    <img class="tours-card__img" width="290" height="416" src="./assets/manaraga-mobile@1x-CpFAsFJc.jpg"
+                      srcset="./assets/manaraga-mobile@2x-Bn7eOZ1d.jpg 2x" alt="Манарага." loading="lazy">
+                  </picture>
+                </div>
+                <div class="tours-card__text-wrapper">
+                  <div class="tours-card__badges-box">
+                    <span class="tours-card__location location-badge">Урал</span>
+                    <ul class="tours-card__list">
+                      <li class="tours-card__days tours-badge tours-badge--days">9 дней</li>
+                      <li class="tours-card__nights tours-badge tours-badge--nights">10 ночей</li>
+                    </ul>
+                  </div>
+                  <h3 class="tours-card__caption tours-caption">Восхождение Манарага</h3>
+                  <div class="tours-card__details tours-details">
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Сложность:</dt>
+                      <dd class="tours-details__stars">
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star star--filled"></span>
+                        <span class="star"></span>
+                      </dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Даты набора:</dt>
+                      <dd class="tours-details__datum">12.07–19.07</dd>
+                    </dl>
+                    <dl class="tours-details__item">
+                      <dt class="tours-details__desc">Группа:</dt>
+                      <dd class="tours-details__quantity">до 7 чел.</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Для disabled поставить tours-link два тире disabled -->
+      <a class="tours__link tours-link" href="#">Показать все туры</a>
+    </section>
+    <section class="main__training training" data-test="training" id="training">
+      <div class="training__content-wrapper">
+        <h2 class="training__caption caption" data-caption="Обучение">Обучение</h2>
+        <p>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов
+          Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <h2 class="training__heading caption">Наши инструкторы</h2>
+        <div class="training__wrapper">
+          <div class="swiper">
+            <button class="training__swiper-button swiper-button-prev training__swiper-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <button class="training__swiper-button swiper-button-next training__swiper-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
+            <ul class="swiper-wrapper training-list">
+              <li class="swiper-slide training-list__item">
+                <div class="training-card">
+                  <div class="training-card__img-wrapper" tabindex="0">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/prokofiev-desktop@1x-BWhF7D4_.webp, ./assets/prokofiev-desktop@2x-DtuebQ2F.webp 2x"
+                        width="255" height="200">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./assets/prokofiev-tablet@1x-DEBkcxvq.webp, ./assets/prokofiev-tablet@2x-DrvnptEx.webp 2x"
+                        width="182" height="200">
+                      <source type="image/webp"
+                        srcset="./assets/prokofiev-mobile@1x-Cj0ubo8h.webp, ./assets/prokofiev-mobile@2x-Dwc2UwPf.webp 2x"
+                        width="260" height="200">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/prokofiev-desktop@1x-wio1GSv-.jpg, ./assets/prokofiev-desktop@2x-BgkzQ4ub.jpg 2x"
+                        type="image/jpg" width="255" height="324">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/prokofiev-tablet@1x-CC4aEW91.jpg, ./assets/prokofiev-tablet@2x-CoWKSuew.jpg 2x"
+                        type="image/jpg" width="182" height="200">
+                      <img class="training-card__img" width="260" height="200"
+                        src="./assets/prokofiev-mobile@1x-D_3EClNQ.jpg" srcset="./assets/prokofiev-mobile@2x-uDAk8s6u.jpg 2x"
+                        alt="Александр Прокофьев." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="training-card__text">
+                    <h3>Александр Прокофьев</h3>
+                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    <a class="training-card__link socials-link socials-link--vk" href="#">
+                      <span class="visually-hidden">В контакте.</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide training-list__item">
+                <div class="training-card">
+                  <div class="training-card__img-wrapper" tabindex="0">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="data:image/webp;base64,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, ./assets/afinogenova-desktop@2x-BwuVv6Rd.webp 2x"
+                        width="255" height="200">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="data:image/webp;base64,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, ./assets/afinogenova-tablet@2x-Cl35GiOu.webp 2x"
+                        width="182" height="200">
+                      <source type="image/webp"
+                        srcset="data:image/webp;base64,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, ./assets/afinogenova-desktop@2x-BwuVv6Rd.webp 2x"
+                        width="260" height="200">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/afinogenova-desktop@1x-BrW4KBSQ.jpg, ./assets/afinogenova-desktop@2x-BYJnfU6r.jpg 2x"
+                        type="image/jpg" width="255" height="200">
+                      <source media="(min-width: 768px)"
+                        srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAMgAuAMBIgACEQEDEQH/xAAzAAABBQEBAAAAAAAAAAAAAAADAAECBAUGBwEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/aAAwDAQACEAMQAAAA9PHIbU3HIJqKCbwcJOzoeUXCUoyCTtIaUnCCIggpoGU0jPGSDTOpA0ncalAIWVQAGqTGOjVeuZkng6CIcQMwUBWEwWUFDqjGJq09SSLUQ1Aln1qYWx5tvPWxbBOb1dPkNzXHZQnckiNgIwojMgpFpBTID61ubXkxdnTDls7tfONIqRwOmy6d+OeXHruEz3C3gW6VZdcXJ0OzzzILoLIF2ak+8bK+aW8tI0FT5vSewXB9YjQ8b9j8SZy+lVy+H0btrjw6R6hw/cczj0ZvoXH9neMfSPI/UL5jI4wHeyKUnSm8kD1Y+xrzBXNgDV0Wp03T0OX2cmLwuo849C5PQpG3ueWmlcqFK0C8PuScn0mHd7PM0BV49XIeIICmFhNXkBD6evKvF2EOIz5lynjtxHQcJ1uHSBXsrHqPtvcueWtYWf0+Vuzxbfd852ZOd6KPTjCUV0wCUIWE6Hu1T1FREN058suS5uqrN6WufebHnXU8XcfkK4evjtMGfR5x9nHKYk2sHQvm6o2Lqx6KGouriZKtetYqokzcUnSxmadBsWVZiIojI0EIqEiSRi47wRWSaW9j2Gu8GAq0uoSZs1i1RF53dyQ4SaA8bVYcZ3JGLg7SQRlKTmE5SeQblGU7Gq3SVzrp8bTrn206z9HSp3cxqXnvWcIq0qkZ1zCjOM9ClCbSlGIiyBEVuuKYLVydO+RZ1yitXeMo7N5Ukl7JzfYZ2d+ech1/Iaw6ZhumYTs0RyZnB3eQSsiLXJUt1DlFo26YSTKenTTIPcqqXPr5HhJb5JkmJkgZJAnSAzJETmk8QlSKCNJbJJD00kH/xAA8EAABBAEDAQIMAwcEAwAAAAABAAIDEQQFEiExEEEGExQiIyRRYXJzsbIgcYEyMzQ1QnSRFVKCoSWS0f/aAAgBAQABPwCZ3pZPjK3LcrW5WtyBVq0CrQKBV/hrtj/eM+IKYell+MqlRVdtIAqiqKpUgEGlbVSpUqVBUFSYPPZ8QUo9LJ8R7KVdgCA7OFbUXAIUUPw2rVrctyjPns+IKX97J8R/BQQRcAnzAJ2SPaEctv8AuQyQ8FMn96jmDhyrCvstbluW5bluUTvSx/EFMR42T4irCsK1afIGttSZF9HKbLPIBT5y1xIIFBHIaf6mlrhwhkHdGQbaeCAmT3t4UM4IBUcoeOqBVq0Sty3K1aiPpY/iCmf6aX43LevGIPW9ZMtUFJKS8sapZI4vOc+muHU+1MOVkua7HiJA4LifNP6pmjSP2ulyKINgMHT9Sm6LBXE81/EENJlZzFmP9tPaHC/0peU5OK8Nyo6aTxI3lpv6KCdp20UHCrW5WrRcty3K1CfSx/GFPjv8fNx/UV5JIRwF5JJ7E6NzUASVlSBr3cqXKZE15JFjkLAg8rf5RkX4vqyInj8yg8AABbkJOnKEyl2StLXgFpFEKF8mBl+TEkxP5iJ7q6tUMpMYtb1vW73q0BajgLzSkx3MUEZM0fxBOgY4k0mwNAqkYWkdFJhA3wm6e0C9q1V2yeRt/suKypDkZceP3Xvk/T/6opdgACZKSt6DkZW1ZNI6hiMdtMzbWrlsuA+eJwc6EiUH4eq02ds0AIPcD2crlArHY6Q0FjYuwcqTHBCjxdrwa6H8WvkDKy/dIVp5c+bJlcSfO2jm6AT9RDLEUbpXjqB3KXwlzYeDhV+awfCITup7Njkc1zow4dFqedPly/vHiNvAAKwdawsJ43Qbnf7idyxJsfPwpRGAPGREcd9heCku8Y8LutbCn6YP6Qv9NIR04kJmmnvUGMIPOUur4sPBNkKLwhwJC27BX+p4ltDTZJAUnhDp0e8F7twJFbSs7wiyJzti9Gz/ALUOs50Tw4TuPuK07XcbIa1knmP/AOirC8J5Kzszk/vHLQwyTD3O4Je/6rU8yfFDhGA0HvCjizcrGlyHSimmtridx/IBYsGS+UARvaeoNFacwS6aQR520p+nwRTtdK9pjHOx1gH81k4mmZ2X4x8oo0BHEFpWn42DA0Rtc2+5x6LwenEOs5uOXUYp3Efkotb2nqHJmuYpHpOFJ4QYjb2glO8Iolk6/wCMaQ11KfNkfI47uqbmvbyHLC1RzsnHa49ZWj/JWU/1mf5jvqhIt6bIR3oZcwI89xpeE5PjZJejZGg/qvBuZhxnMd0a8qTDxslnomMa+v2qUmj6wPNbOwMTdIMLC6WR0j/8BaYNpfFS8kj3vEjAW+9QYmJEbZEwH2gKRpJsLM8Zi69lZETuQ4Fw/MJmY/aHB3B5Tsp/tRyHURuK8cUZSnPReVgP9fxPnx/css+t5HzX/VBytBxW61rkZm04kdYjuWgTluVLHfDuVivDO9eWs2nlZess8qZA1/Fje72LGzMSOQgzAu7is7KjngeyN/pK4IKx9Xnx5XQzuNhR6qDQXhDPBHkkBtOkj3E+2wQFisJx4hd+YEQQirKJRNorAPr+H8+P7lln1rJ+a/6q0CtysLVZHeTGJn7cvmN/5cWsjHj0rWscMd6N9fnR4WXPJDy0lS6lOWOAsLCdjtb6dw87qSVNg4kjt0GW1v6rT8rEwItm4zyV0YLWoahjZktRtcyUH+oUhqGJAxlP3v4JAWfn42ZOyV8ZdsZtAtRalLubtaAL9qgmMjGl3WuvtRRpFEWnLA/j8P58f3BZjvW8n5r/AKolBwpF6Dzame0TGd9bYmk/qtTy35OZLO51knj3AdFi5TMyGNzjy5vnfmjiMkhlAHn0sXTsePKc7Nc57BRFBQyeCIMjXwSDzKsxv6+5HXdNxWNGHpwawNG6R9MApalqPluTLMGNaHUOBSBKBa0cqF8JJF0eotRa1BDUe0vcgCWMfVBzQQiijYCJJWn85+H8+P7lmH1zK+c/6rcrK3IvDGlx7gtenMWE1t0ZHW7lTRuEYceruVhZjoHVfmkrEzN+14PxKaFs3JbysvUH4Me0zA+xpAJWVnZOU/dLISO4dwTXigU6Yg0Ao5CR5xWNhB8e9zqa5SQY8c5aZC0tITdXyIX+J4dG6nNJ7isbI8phEgBHcQjwi5ErTwfL8P58f3LNPrmV85/1Vq171qusOY0xwt69D3lSvfkNbLPMXPLunsCmlEkZPfZRCwc1+O8d7VL4RRw4jWwjdLVN9jQVNLLM8ySOJcepPY0I0myRMaAOUzL2kAOICl2zVuuwOqwpYYmhsgvnglR6ljY8zGE0x/f3A+1PcLIDgQO8Ins0/wDj8P58f3LNPrmV85/17LTuWlvtC1KfZI6CN4c9ttc7joU8kAAq0VGLJ/JNFH2lFjiRdLa1vJNlCiOVbatW2luFdOVD57evIU7S0NeCUXuIAJJWi5z4pfFPtzHCiEYyCb6dQezAPr+F8+P7lnfxmV85/wBe3X8rLbkuibkuYyhTW8IRus+e387TmO5HU+5MjLrsFeKF1uCFNdwRSBAPeUSSqrv7eKQrqUx9IxuLRfQrxQZJUhApTTxB0ToaBaFpWpx58fiHANmYLb704kONrTj/AOQwv7iP7lmn13K+c/6q1a8IMEzwCdg86Pr72piDmt52rxoEDqb5x70xwpGlavtDSVtQj96IAKgnAbsd+hWS8Po2LTQXGgFFi5kTmSxNJINgBQ5zsktbLCY5ttkVQPvC07+YYXz4/uWcfXcv5z/uVq1q2dFBAYjy6QEALYRZpElWeR20qVIDsAR4CKYx7zwFLjhjW3y4qJjGckhNz44waJWNrcAIbK22Fae+KTPwXwvDmGeOv/ZZ/wDHZfzn/crT5gwEnuFlZ2Y7KyXSk8XwPYFM/cSQeCiOUQnCih2gdgFLewd6fLZQNuCia0rNk2mOkXuJvspeD2bLDq2AwkljsmIEH4gs9p8ty/nP+5SOI4Wpy+LwpyOpbX+eOxkjuG9VbSnI2Qmns5C3rxldEZHFclBicKIWM7kLP5e3ttaP/N9N/u4fvCzoGuysn5r/AKrMhex17eFrTqwSPa9vY1xabHVEkkkns5Vdt9lJjbK2gBSftLHfVcrM5DHfg0b+bab/AHcP3hZYHlOR8x/1UjGu4IXhZsjmghb7C89p7LKN9oFlAdkf7SceqIsqJZLtzR7vwaN/N9N/u4fvCyj61kfNd9UV4R5Hj9XyvYwhg/4o9g/EOqZXUhFR/tJ/egE07Rae++zu7NG/m+m/3cP3hf/EACcRAAICAQMEAQQDAAAAAAAAAAABAhExAxIhECAiQVEEEzJxQIKR/9oACAECAQE/AP5j1YL2fej8MUk8PssRv1bwfcmsohqbm+DW1Ke1MsshOpIsslKkXqvyS4ITm78RySFNPPBLKJJy1H+x6dRfKTIOpK2S2cbWyUm3HOPR/d/4VN+mRjqUrkJS9so2jio8mr4zZwcUOSNBXnFG1FLo+uq6pWfUR8YSohtkmsG1+2yH0sZU5XXwQhCKSSSJUn1fRlb5X6Qlui1JE9CamlFGnpqC55Zboyl5IUbVOv2PiTXYxRortV/JVpuyLb7MC60UVYoO6Y4w9SGIZd9ll2aeSf5PqpUy77lgjkm7k+ryLC7ljt//xAAqEQACAgEDBAIBAwUAAAAAAAABAgARAwQSMRAhQWEgURMFInEUM0BSgf/aAAgBAwEBPwD/ADFw5G8UPcOnceRGUqaI+VY5tQ8GMtDmafCCNx/5NsImXGGQ9KiizLTiMF7UYFJhU+O8EQhcS/xFzHf5ImQFl/aIgykHeAB4m2rArmd/9BOw8qIzJfEseJcuAlu0wU2MQL6lG+O02+5qSB6IJm4y5cXriFkmuBNO37mW4TkBBAuBwCaQ+zNV+pMljFtLfc1GfPkJZ2ZppGdsK7lII+/roYvQQHYteTCdrAqZj1K7CxNVM2pfKa4X6n4U32RcAAdz/TtUfUfiYZFZ2IBGxvcw5BlwrkA56L0uF7NkwuAZfTb7lAffMbaG3FOBUOQDImMYzR5IHYRgBF6lVcnvCoK1KAliFo2RrAB7ywq2xjaxNm5AWJ49zFqNbdZcFr9jsRE7iGKIuM47EU9oeZRM2MYuNEO7zNeCcQYHiaJFGnxmu9HqVsQCvlmLFwJnUNhKmaRSuBQffwPxHJMf+4P4j96Bg6//2Q==, ./assets/afinogenova-tablet@2x-ClJMfWIr.jpg 2x"
+                        type="image/jpg" width="182" height="200">
+                      <img class="training-card__img" width="260" height="200"
+                        src="./assets/afinogenova-desktop@1x-BrW4KBSQ.jpg"
+                        srcset="./assets/afinogenova-desktop@2x-BYJnfU6r.jpg 2x" alt="Светлана Афиногенова." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="training-card__text">
+                    <h3>Светлана Афиногенова</h3>
+                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+                      в этом назначение жизни.</p>
+                    <a class="training-card__link socials-link socials-link--vk" href="#">
+                      <span class="visually-hidden">В контакте.</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide training-list__item">
+                <div class="training-card">
+                  <div class="training-card__img-wrapper" tabindex="0">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/kolesnichenko-desktop@1x-QfbwyiSP.webp, ./assets/kolesnichenko-desktop@2x-QT6-lyJi.webp 2x"
+                        width="255" height="200">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="data:image/webp;base64,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, ./assets/kolesnichenko-tablet@2x-d-V5THoK.webp 2x"
+                        width="182" height="200">
+                      <source type="image/webp"
+                        srcset="./assets/kolesnichenko-mobile@1x-BA8O6_RM.webp, ./assets/kolesnichenko-mobile@2x-ZFoFqSOJ.webp 2x"
+                        width="260" height="200">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/kolesnichenko-desktop@1x-B0CMhF4r.jpg, ./assets/kolesnichenko-desktop@2x-Knl4PYhK.jpg 2x"
+                        type="image/jpg" width="255" height="200">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/kolesnichenko-tablet@1x-BTU6AbO8.jpg, ./assets/kolesnichenko-tablet@2x-B_39QImy.jpg 2x"
+                        type="image/jpg" width="182" height="200">
+                      <img class="training-card__img" width="260" height="200"
+                        src="./assets/kolesnichenko-mobile@1x-B_0akCCi.jpg"
+                        srcset="./assets/kolesnichenko-mobile@2x-XVEK9sIY.jpg 2x" alt="Надежда Колесниченко." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="training-card__text">
+                    <h3>Надежда Колесниченко</h3>
+                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь
+                      себя спокойно и уверенно.</p>
+                    <a class="training-card__link socials-link socials-link--vk" href="#">
+                      <span class="visually-hidden">В контакте.</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide training-list__item">
+                <div class="training-card">
+                  <div class="training-card__img-wrapper" tabindex="0">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/kaigorodov-desktop@1x-P6iRX3EE.webp, ./assets/kaigorodov-desktop@2x-Cs5zYgi4.webp 2x"
+                        width="255" height="200">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./assets/kaigorodov-tablet@1x-CzGW2r5r.webp, ./assets/kaigorodov-tablet@2x-CU6GXf-j.webp 2x"
+                        width="182" height="200">
+                      <source type="image/webp"
+                        srcset="./assets/kaigorodov-desktop@1x-P6iRX3EE.webp, ./assets/kaigorodov-desktop@2x-Cs5zYgi4.webp 2x"
+                        width="260" height="200">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/kaigorodov-desktop@1x-DINBaaPx.jpg, ./assets/kaigorodov-desktop@2x-qS50CuBR.jpg 2x"
+                        type="image/jpg" width="255" height="200">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/kaigorodov-tablet@1x-B-O3WTOK.jpg, ./assets/kaigorodov-tablet@2x-BCHUek5U.jpg 2x"
+                        type="image/jpg" width="182" height="200">
+                      <img class="training-card__img" width="260" height="200"
+                        src="./assets/kaigorodov-desktop@1x-DINBaaPx.jpg" srcset="./assets/kaigorodov-desktop@2x-qS50CuBR.jpg 2x"
+                        alt="Федор Кайгородов." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="training-card__text">
+                    <h3>Федор Кайгородов</h3>
+                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                      путешествует по Европе.</p>
+                    <a class="training-card__link socials-link socials-link--vk" href="#">
+                      <span class="visually-hidden">В контакте.</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide training-list__item training-card">
+                <div class="training-card__img-wrapper" tabindex="0">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="./assets/vasnetsov-desktop@1x-CcIJUh_B.webp, ./assets/vasnetsov-desktop@2x-CrKP5WVo.webp 2x"
+                      width="255" height="200">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./assets/vasnetsov-tablet@1x-BaKvkU6e.webp, ./assets/vasnetsov-tablet@2x-_Q9J3AVT.webp 2x"
+                      width="182" height="200">
+                    <source type="image/webp"
+                      srcset="./assets/vasnetsov-mobile@1x-DW1ArjdC.webp, ./assets/vasnetsov-mobile@2x-BGfUlx4B.webp 2x"
+                      width="260" height="200">
+                    <source media="(min-width: 1440px)"
+                      srcset="./assets/vasnetsov-desktop@1x-BtkyLB8U.jpg, ./assets/vasnetsov-desktop@2x-dnjx8GyC.jpg 2x"
+                      type="image/jpg" width="255" height="200">
+                    <source media="(min-width: 768px)"
+                      srcset="./assets/vasnetsov-tablet@1x-Cl-6ANL3.jpg, ./assets/vasnetsov-tablet@2x-n0vvVCQ-.jpg 2x"
+                      type="image/jpg" width="182" height="200">
+                    <img class="training-card__img" width="260" height="200" src="./assets/vasnetsov-mobile@1x-CIndzg4Z.jpg"
+                      srcset="./assets/vasnetsov-mobile@2x-DJO2dp8r.jpg 2x" alt="Даниэль Васнецов." loading="lazy">
+                  </picture>
+                </div>
+                <div class="training-card__text">
+                  <h3>Даниэль Васнецов</h3>
+                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                  <a class="training-card__link socials-link socials-link--vk" href="#">
+                    <span class="visually-hidden">В контакте.</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="training__process education">
+          <h3 class="education__caption caption-secondary">Процесс обучения</h3>
+          <ul class="education__list education-list">
+            <li class="education-list__item education-list__item--movement">Изучение спортивного туристского движения
+            </li>
+            <li class="education-list__item education-list__item--equipment">Подготовка и техническое снаряжение
+              в походах</li>
+            <li class="education-list__item education-list__item--ecology">Лекции по окружающей среде, экологии
+              и гигиене</li>
+            <li class="education-list__item education-list__item--mountain">Разъяснение сложности горных препятствий
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <section class="main__about about" data-test="about" id="about">
+      <div class="about__wrapper">
+        <h2>О нас</h2>
+        <h3>История компании</h3>
+        <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
+          понравилось, что мы этим стали жить. Спустя&nbsp;5 лет, в 2005 году мы основали компанию, чтобы показывать
+          людям удивительные места нашей страны.</p>
+        <h3>Наша цель</h3>
+        <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
+          При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым
+          приключением в приятной компании.</p>
+      </div>
+    </section>
+    <section class="main__reviews reviews" data-test="reviews" id="reviews">
+      <div class="reviews__content-wrapper">
+        <h2 class="reviews__caption caption" data-caption="Отзывы">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="swiper">
+            <button class="reviews__swiper-button swiper-button-prev reviews__swiper-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <button class="reviews__swiper-button swiper-button-next reviews__swiper-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
+            <ul class="swiper-wrapper reviews-list">
+              <li class="swiper-slide reviews-list__item reviews-card">
+                <div class="reviews-card__wrapper" tabindex="0">
+                  <div class="reviews-card__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/frolov-desktop@1x-Ryk2ijJJ.webp, ./assets/frolov-desktop@2x-DaDhlSip.webp 2x" width="258"
+                        height="253">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./assets/frolov-tablet@1x-CRCIp8Oj.webp, ./assets/frolov-tablet@2x-1XtD2hsa.webp 2x" width="186"
+                        height="237">
+                      <source type="image/webp"
+                        srcset="./assets/frolov-mobile@1x-cHVBZT5c.webp, ./assets/frolov-mobile@2x-Bkk2uBM2.webp 2x" width="250"
+                        height="169">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/frolov-desktop@1x-CFxbSYna.jpg, ./assets/frolov-desktop@2x-C1U6xa4G.jpg 2x"
+                        type="image/jpg" width="258" height="253">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/frolov-tablet@1x-BILbZeTt.jpg, ./assets/frolov-tablet@2x-cxefR1M0.jpg 2x" type="image/jpg"
+                        width="186" height="237">
+                      <img class="reviews-card__img" width="250" height="169" src="./assets/frolov-mobile@1x-BUspKMTO.jpg"
+                        srcset="./assets/frolov-mobile@2x-64xvz4fe.jpg 2x" alt="Отзыв Фролова." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="reviews-card__text-wrapper">
+                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие
+                      эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.</p>
+                    <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                      так душой и телом. Всем очень рекомендую!</p>
+                    <h3 class="reviews-card__name">Фролов Александр</h3>
+                    <span class="reviews-card__age">38 лет, Москва</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide reviews-list__item reviews-card">
+                <div class="reviews-card__wrapper" tabindex="0">
+                  <div class="reviews-card__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/soloview-desktop@1x-C2mz7bYL.webp, ./assets/soloview-desktop@2x-gGKtWf2-.webp 2x"
+                        width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./assets/soloview-tablet@1x-6GyULBQ3.webp, ./assets/soloview-tablet@2x-Bf4joqPB.webp 2x" width="186"
+                        height="237">
+                      <source type="image/webp"
+                        srcset="./assets/soloview-mobile@1x-Daw3XjTy.webp, ./assets/soloview-mobile@2x-DheVicK8.webp 2x" width="250"
+                        height="169">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/soloview-desktop@1x-CsDdYpJ6.jpg, ./assets/soloview-desktop@2x-SPW_7O_N.jpg 2x"
+                        type="image/jpg" width="258" height="253">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/soloview-tablet@1x-DuLYiGpK.jpg, ./assets/soloview-tablet@2x-BNkavFrE.jpg 2x"
+                        type="image/jpg" width="186" height="237">
+                      <img class="reviews-card__img" width="250" height="169" src="./assets/soloview-mobile@1x-48C7hZMu.jpg"
+                        srcset="./assets/soloview-mobile@2x-D5hOa0Ij.jpg 2x" alt="Отзыв Соловьева." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="reviews-card__text-wrapper">
+                    <p>Хороший полноценный поход с разнообразными&nbsp;локациями. В начале дорога идёт по лыжне, далее
+                      прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                      Было очень интересно!</p>
+                    <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                      Всем советую этот тур.</p>
+                    <h3 class="reviews-card__name">Иван Соловьёв</h3>
+                    <span class="reviews-card__age">25 лет, Владивосток</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide reviews-list__item reviews-card">
+                <div class="reviews-card__wrapper" tabindex="0">
+                  <div class="reviews-card__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="./assets/bazhenova-desktop@1x-HqcTRr2k.webp, ./assets/bazhenova-desktop@2x-D7mytJfm.webp 2x"
+                        width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./assets/bazhenova-tablet@1x-C-Ye0-l2.webp, ./assets/bazhenova-tablet@2x-CiPFlg3d.webp 2x"
+                        width="186" height="237">
+                      <source type="image/webp"
+                        srcset="./assets/bazhenova-mobile@1x-CdhCgIWT.webp, ./assets/bazhenova-mobile@2x-BWxbRtwe.webp 2x"
+                        width="250" height="169">
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/bazhenova-desktop@1x-BR0NdYn1.jpg, ./assets/bazhenova-desktop@2x-oZKkiN9o.jpg 2x"
+                        type="image/jpg" width="258" height="253">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/bazhenova-tablet@1x-1UbMlZz4.jpg, ./assets/bazhenova-tablet@2x-DTfQK6pa.jpg 2x"
+                        type="image/jpg" width="186" height="237">
+                      <img class="reviews-card__img" width="250" height="169" src="./assets/bazhenova-mobile@1x-BgASqCJB.jpg"
+                        srcset="./assets/bazhenova-mobile@2x-Dxbt8_IB.jpg 2x" alt="Отзыв Баженовой." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="reviews-card__text-wrapper">
+                    <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
+                      на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче,
+                      чем ожидала, видимо организм уже привык.</p>
+                    <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
+                    <h3 class="reviews-card__name">Евгения Баженова</h3>
+                    <span class="reviews-card__age">23 года, Кострома</span>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide reviews-list__item reviews-card">
+                <div class="reviews-card__wrapper" tabindex="0">
+                  <div class="reviews-card__img-wrapper">
+                    <picture>
+                      <source media="(min-width: 1440px)"
+                        srcset="./assets/pirogova-desktop@1x-B_K4hJL_.jpg, ./assets/pirogova-desktop@2x-DXtRHJ_9.jpg 2x"
+                        type="image/jpg" width="258" height="253">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/pirogova-tablet@1x-DYlZkGgo.jpg, ./assets/pirogova-tablet@2x-BmfqlB64.jpg 2x"
+                        type="image/jpg" width="186" height="237">
+                      <img class="reviews-card__img" width="250" height="169" src="./assets/pirogova-mobile@1x-C9riolci.jpg"
+                        srcset="./assets/pirogova-mobile@2x-CyM0xQPT.jpg 2x" alt="Отзыв Пироговой." loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="reviews-card__text-wrapper">
+                    <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает,
+                      когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
+                    <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
+                      у костра и пели песни. Обязательно повторю такое приключение!</p>
+                    <h3 class="reviews-card__name">Елена Пирогова</h3>
+                    <span class="reviews-card__age">37 лет, Тюмень</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__advantages advantages" data-test="adv">
+      <h2 class="advantages__caption caption" data-caption="Преимущества">Преимущества</h2>
+      <div class="advantages__wrapper">
+        <div class="swiper">
+          <button class="swiper-button-prev advantages__swiper-button advantages__swiper-button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="swiper-button-next advantages__swiper-button advantages__swiper-button--next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+          <ul class="swiper-wrapper advantages-list">
+            <li class="swiper-slide advantages-list__item advantage-card advantage-card--safety" tabindex="0">
+              <h3>Безопасность</h3>
+              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
+                действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+              </p>
+            </li>
+            <li class="swiper-slide advantages-list__item advantage-card advantage-card--expertise" tabindex="0">
+              <h3>Экспертиза и знания</h3>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
+                безопасности.<br class="advantage-card__break">Это гарантирует, что наши клиенты находятся в надёжных
+                руках и могут в полной мере насладиться опытом без опасений.</p>
+            </li>
+            <li class="swiper-slide advantages-list__item advantage-card advantage-card--equipment" tabindex="0">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
+                клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
+                и экономически выгодным.</p>
+            </li>
+            <li class="swiper-slide advantages-list__item advantage-card advantage-card--routes" tabindex="0">
+              <h3>Индивидуальные маршруты</h3>
+              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
+                адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
+                опыт.</p>
+            </li>
+            <li class="swiper-slide advantages-list__item advantage-card advantage-card--environment" tabindex="0">
+              <h3>Бережное отношение
+                <span>к&nbsp;природе</span>
+              </h3>
+              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
+                воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+            </li>
+            <li
+              class="swiper-slide advantages-list__item advantage-card advantage-card--safety advantage-card--additional"
+              tabindex="0">
+              <h3>Безопасность</h3>
+              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы
+                действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+              </p>
+            </li>
+            <li
+              class="swiper-slide advantages-list__item advantage-card advantage-card--expertise advantage-card--additional"
+              tabindex="0">
+              <h3>Экспертиза и знания</h3>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
+                безопасности.<br class="advantage-card__break">Это гарантирует, что наши клиенты находятся в надёжных
+                руках и могут в полной мере насладиться опытом без опасений.</p>
+            </li>
+            <li
+              class="swiper-slide advantages-list__item advantage-card advantage-card--equipment advantage-card--additional"
+              tabindex="0">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
+                клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
+                и экономически выгодным.</p>
+            </li>
+            <li
+              class="swiper-slide advantages-list__item advantage-card advantage-card--routes advantage-card--additional"
+              tabindex="0">
+              <h3>Индивидуальные маршруты</h3>
+              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
+                адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный
+                опыт.</p>
+            </li>
+            <li
+              class="swiper-slide advantages-list__item advantage-card advantage-card--environment advantage-card--additional"
+              tabindex="0">
+              <h3>Бережное отношение
+                <span>к&nbsp;природе</span>
+              </h3>
+              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
+                воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__gallery gallery" data-test="gallery" id="gallery">
+      <h2 class="gallery__caption caption" data-caption="Фотогалерея">Фотогалерея</h2>
+      <p>Добавляйте фото с хэштегом #лайфтур, а также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот раздел
+        нашего сайта.</p>
+      <div class="gallery__wrapper">
+        <div class="swiper">
+          <button class="gallery__swiper-button swiper-button-prev gallery__swiper-button--prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="gallery__swiper-button swiper-button-next gallery__swiper-button--next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
+          <ul class="swiper-wrapper gallery__list gallery-list">
+            <li class="swiper-slide gallery__list-item gallery-card">
+              <div class="gallery-card__img-wrapper" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./assets/photo1-desktop@1x-CLLLLlGR.webp, ./assets/photo1-desktop@2x-iLoqhl3a.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./assets/photo1-tablet@1x-D6vsx12_.webp, ./assets/photo1-tablet@2x-Dy4Lutmp.webp 2x" width="253"
+                    height="418">
+                  <source type="image/webp"
+                    srcset="./assets/photo1-mobile@1x-CfZkrjU5.webp, ./assets/photo1-mobile@2x-Bn7CB4Tq.webp 2x" width="158"
+                    height="266">
+                  <source media="(min-width: 1440px)"
+                    srcset="./assets/photo1-desktop@1x-Dh3t9nDR.jpg, ./assets/photo1-desktop@2x-DwSLtPHj.jpg 2x" type="image/jpg"
+                    width="284" height="463">
+                  <source media="(min-width: 768px)"
+                    srcset="./assets/photo1-tablet@1x-_aCguu2c.jpg, ./assets/photo1-tablet@2x-9h6NY8Uz.jpg 2x" type="image/jpg"
+                    width="253" height="418">
+                  <img class="gallery-card__img" width="158" height="266" src="./assets/photo1-mobile@1x-C--HAkEb.jpg"
+                    srcset="./assets/photo1-mobile@2x-BZiywtBw.jpg 2x" alt="Горы Алтая." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide gallery__list-item gallery-card">
+              <div class="gallery-card__img-wrapper" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./assets/photo2-desktop@1x-DyYWhWUf.webp, ./assets/photo2-desktop@2x-AQPN6QgT.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./assets/photo2-tablet@1x-C8_btpUd.webp, ./assets/photo2-tablet@2x--JCf0hIr.webp 2x" width="2520"
+                    height="418">
+                  <source type="image/webp"
+                    srcset="./assets/photo2-mobile@1x-DldT7d6Y.webp, ./assets/photo2-mobile@2x-nhUe7qn4.webp 2x" width="158"
+                    height="266">
+                  <source media="(min-width: 1440px)"
+                    srcset="./assets/photo2-desktop@1x-BGi_gBU_.png, ./assets/photo2-desktop@2x-ZtQlERDF.png 2x" type="image/png"
+                    width="284" height="463">
+                  <source media="(min-width: 768px)"
+                    srcset="./assets/photo2-tablet@1x-BBSOukNd.png, ./assets/photo2-tablet@2x-CHHTGn3-.png 2x" type="image/png"
+                    width="253" height="418">
+                  <img class="gallery-card__img" width="158" height="266" src="./assets/photo2-mobile@1x-CZ86lZIX.jpg"
+                    srcset="./assets/photo2-mobile@2x-CSu2FmLN.jpg 2x" alt="Вечерний костер." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide gallery__list-item gallery-card">
+              <div class="gallery-card__img-wrapper" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./assets/photo3-desktop@1x-CwRZpjAW.webp, ./assets/photo3-desktop@2x-CANvk-Eb.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./assets/photo3-tablet@1x-CZTkgxbj.webp, ./assets/photo3-tablet@2x-BgEAmQxo.webp 2x" width="253"
+                    height="418">
+                  <source type="image/webp"
+                    srcset="./assets/photo3-mobile@1x-B3-fkWhw.webp, ./assets/photo3-mobile@2x-ByN5Vmeo.webp 2x" width="158"
+                    height="266">
+                  <source media="(min-width: 1440px)"
+                    srcset="./assets/photo3-desktop@1x-EPiE3a5z.jpg, ./assets/photo3-desktop@2x-B-tMILAo.jpg 2x" type="image/jpg"
+                    width="284" height="463">
+                  <source media="(min-width: 768px)"
+                    srcset="./assets/photo3-tablet@1x-CWlONK9W.jpg, ./assets/photo3-tablet@2x-CkaGUfhH.jpg 2x" type="image/jpg"
+                    width="253" height="418">
+                  <img class="gallery-card__img" width="158" height="266" src="./assets/photo3-mobile@1x-DDka0Uxz.jpg"
+                    srcset="./assets/photo3-mobile@2x-37-6y0o-.jpg 2x" alt="Крутой спуск." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide gallery__list-item gallery-card">
+              <div class="gallery-card__img-wrapper" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./assets/photo4-desktop@1x-DhnbRtNP.webp, ./assets/photo4-desktop@2x-CH7o1eCC.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./assets/photo4-tablet@1x-QaeXFFw4.webp, ./assets/photo4-tablet@2x-BdNg7yqe.webp 2x" width="253"
+                    height="418">
+                  <source type="image/webp"
+                    srcset="./assets/photo4-mobile@1x-JmSHaPee.webp, ./assets/photo4-mobile@2x-Bln76u5_.webp 2x" width="158"
+                    height="266">
+                  <source media="(min-width: 1440px)"
+                    srcset="./assets/photo4-desktop@1x-Cw9or_hz.png, ./assets/photo4-desktop@2x-YShcC9Nb.png 2x" type="image/png"
+                    width="284" height="463">
+                  <source media="(min-width: 768px)"
+                    srcset="./assets/photo4-tablet@1x-DpAlkCxJ.jpg, ./assets/photo4-tablet@2x-B_JUSZjS.jpg 2x" type="image/jpg"
+                    width="253" height="418">
+                  <img class="gallery-card__img" width="158" height="266" src="./assets/photo4-mobile@1x-d2v7fiIt.jpg"
+                    srcset="./assets/photo4-mobile@2x-CC1NP52c.jpg 2x" alt="Укрытие в зимнее время." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide gallery__list-item gallery-card">
+              <div class="gallery-card__img-wrapper" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="./assets/photo5-desktop@1x-2j3MAbv5.webp, ./assets/photo5-desktop@2x-BvA4DNvq.webp 2x" width="284"
+                    height="463">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./assets/photo5-tablet@1x-BEdM-nbg.webp, ./assets/photo5-tablet@2x-DjUdB9mU.webp 2x" width="253"
+                    height="418">
+                  <source type="image/webp"
+                    srcset="./assets/photo5-mobile@1x-BEO3WpQV.webp, ./assets/photo5-mobile@2x-J5VDTvFk.webp 2x" width="158"
+                    height="266">
+                  <source media="(min-width: 1440px)"
+                    srcset="./assets/photo5-desktop@1x-DWtL3ZT9.jpg, ./assets/photo5-desktop@2x-CRInIxn0.jpg 2x" type="image/jpg"
+                    width="284" height="463">
+                  <source media="(min-width: 768px)"
+                    srcset="./assets/photo5-tablet@1x-D_OHBcp4.jpg, ./assets/photo5-tablet@2x-B7IwLDhe.jpg 2x" type="image/jpg"
+                    width="253" height="418">
+                  <img class="gallery-card__img" width="158" height="266" src="./assets/photo5-mobile@1x-C2RxY1zI.jpg"
+                    srcset="./assets/photo5-mobile@2x-BM322KJ3.jpg 2x" alt="Приготовление ужина." loading="lazy">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__form form" data-test="form">
+      <h2>Остались вопросы?</h2>
+      <p>Заполните форму и наш оператор свяжется с вами&nbsp;для консультации.</p>
+      <form class="form__form-group form-group" id="form-group" action="https://echo.htmlacademy.ru/" method="post"
+        novalidate>
+        <div class="form-group__input-wrapper">
+          <input class="form-group__field field" type="tel" name="phone" id="phone" placeholder="+7 (000)-000-00-00"
+            required>
+          <label class="form-group__label" for="phone">Телефон
+          </label>
+        </div>
+        <div class="form-group__input-wrapper">
+          <input class="form-group__field field" type="email" name="email" id="email" placeholder="email@email.com"
+            required>
+          <label class="form-group__label" for="email">Email
+          </label>
+        </div>
+        <button class="form-group__button button" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="body__footer footer" data-test="footer">
+    <div class="footer__wrapper">
+      <section class="footer__contacts contacts" id="contacts">
+        <h2 class="contacts__caption caption" data-caption="Контакты">Контакты</h2>
+        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+          увлекательными историями и подобрать для вас тур.</p>
+        <ul class="contacts__list contacts-list">
+          <li class="contacts-list__item contacts-list__item--phone caption-small">
+            Телефон
+            <a class="contacts-list__link" href="tel:+79837454545">+7 983 745-45-45</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--email caption-small">
+            Email
+            <a class="contacts-list__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--address caption-small">
+            Адрес
+            <address class="contacts-list__address">г. Москва, пр-т Мира, д. 14, офис 101</address>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__map map">
+        <h2 class="visually-hidden">Адрес компании Lifetour на карте.</h2>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="./assets/map-desktop@1x-SBAOmduM.webp, ./assets/map-desktop@2x-BKE9DXAy.webp 2x" width="600" height="324">
+          <source type="image/webp" media="(min-width: 321px)"
+            srcset="./assets/map-tablet@1x-BBzvG1Lt.webp, ./assets/map-tablet@2x-BXqgVG0J.webp 2x" width="768" height="340">
+          <source type="image/webp" srcset="./assets/map-mobile@1x-LXqymlnX.webp, ./assets/map-mobile@2x-CEonu-zF.webp 2x" width="320"
+            height="343">
+          <source media="(min-width: 1440px)" srcset="./assets/map-desktop@1x-C1xd1Hx9.jpg, ./assets/map-desktop@2x-DsaRYcu1.jpg 2x"
+            type="image/jpg" width="600" height="324">
+          <source media="(min-width: 321px)" srcset="./assets/map-tablet@1x-CVnZCaX6.jpg, ./assets/map-tablet@2x-DdfPODDz.jpg 2x"
+            type="image/jpg" width="768" height="340">
+          <img class="map__map" width="320" height="343" src="./assets/map-mobile@1x-Br8uj6aj.jpg"
+            srcset="./assets/map-mobile@2x-BL_4czpX.jpg 2x"
+            alt="Адрес компании Lifetour на карте:г. Москва, пр-т Мира, д. 14, офис 101" loading="lazy">
+        </picture>
+      </section>
+    </div>
+    <section class="footer__nav footer-nav">
+      <h2 class="visually-hidden">О нас.</h2>
+      <a class="footer-nav__img-wrapper footer-logo" href="#"
+        aria-label="Логотип Lifetour - организации поездок в горы.">
+        <svg width="142" height="42" viewBox="0 0 142 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+          role="img">
+          <path d="M15.7314 27.2445L19.4995 23.359L23.7857 27.2445H31.1334L19.4524 16.0044L7.86561 27.2445H15.7314Z"
+            fill="currentColor" />
+          <path
+            d="M26.5178 9.20485L20.9599 14.7555L24.6337 18.4559L26.5178 16.6057L36.8328 26.6894C34.4778 32.8414 28.4489 37.2357 21.3367 37.2357C12.1991 37.2357 4.80428 29.9736 4.80428 21C4.85138 12.0264 12.2462 4.76432 21.3838 4.76432C29.4851 4.76432 36.2676 10.5463 37.6336 18.0859L42.6262 23.2665C42.7204 22.5264 42.7675 21.7401 42.7675 21C42.7675 15.4031 40.5538 10.13 36.5031 6.15198C32.4525 2.17401 27.083 0 21.3838 0C15.6375 0 10.3151 2.17401 6.26441 6.15198C2.21374 10.13 0 15.3568 0 21C0 26.6432 2.21374 31.87 6.26441 35.848C10.3151 39.826 15.6846 42 21.3838 42C27.083 42 32.4525 39.826 36.5031 35.848C38.9995 33.3965 40.7893 30.4824 41.7784 27.2907C41.9668 26.7357 42.1081 26.1344 42.2494 25.5793L37.9162 21.0925L26.5178 9.20485Z"
+            fill="currentColor" />
+          <path d="M60.4115 13.4945H63.5561L61.8408 21.9634H67.1453L66.6371 24.4121H58.1881L60.4115 13.4945Z"
+            fill="currentColor" />
+          <path d="M70.1049 13.4945H73.2495L71.026 24.4121H67.8815L70.1049 13.4945Z" fill="currentColor" />
+          <path
+            d="M78.1389 15.8808L77.6466 18.2826H82.554L82.0617 20.6689H77.1701L76.4078 24.4121H73.2632L75.4867 13.4945H84.1898L83.6975 15.8808H78.1389Z"
+            fill="currentColor" />
+          <path
+            d="M88.2809 15.8808L87.9157 17.7212H92.8549L92.3943 20.0295H87.4392L87.0422 22.0258H92.8707L92.3625 24.4121H83.4529L85.6764 13.4945H94.3795L93.8872 15.8808H88.2809Z"
+            fill="currentColor" />
+          <path
+            d="M98.205 15.9431H94.7904L95.2987 13.4945H105.256L104.748 15.9431H101.35L99.6185 24.4121H96.4739L98.205 15.9431Z"
+            fill="currentColor" />
+          <path
+            d="M110.053 24.6305C108.93 24.6305 107.951 24.4277 107.115 24.0222C106.289 23.6167 105.648 23.05 105.193 22.3222C104.748 21.5943 104.526 20.7625 104.526 19.8267C104.526 18.579 104.817 17.456 105.399 16.4578C105.992 15.4596 106.813 14.6798 107.861 14.1183C108.92 13.5569 110.122 13.2761 111.466 13.2761C112.588 13.2761 113.563 13.4789 114.388 13.8844C115.225 14.2899 115.865 14.8566 116.31 15.5844C116.765 16.3123 116.993 17.1441 116.993 18.0799C116.993 19.3276 116.697 20.4506 116.104 21.4488C115.521 22.4469 114.701 23.2268 113.642 23.7882C112.594 24.3497 111.397 24.6305 110.053 24.6305ZM110.323 22.0726C111.021 22.0726 111.636 21.9011 112.165 21.5579C112.694 21.2148 113.102 20.7573 113.388 20.1854C113.674 19.6032 113.817 18.9637 113.817 18.267C113.817 17.5288 113.584 16.9413 113.118 16.5046C112.663 16.0575 112.022 15.834 111.196 15.834C110.497 15.834 109.883 16.0055 109.354 16.3487C108.825 16.6918 108.417 17.1545 108.131 17.7368C107.845 18.3086 107.702 18.9429 107.702 19.6395C107.702 20.3778 107.93 20.9705 108.385 21.4176C108.851 21.8543 109.497 22.0726 110.323 22.0726Z"
+            fill="currentColor" />
+          <path
+            d="M122.896 24.6305C121.933 24.6305 121.102 24.4745 120.403 24.1626C119.704 23.8402 119.169 23.3827 118.799 22.7901C118.428 22.1974 118.243 21.5007 118.243 20.7001C118.243 20.3674 118.285 19.9827 118.37 19.546L119.609 13.4945H122.753L121.53 19.4992C121.467 19.8111 121.435 20.097 121.435 20.357C121.435 21.5007 122.049 22.0726 123.277 22.0726C123.944 22.0726 124.469 21.8751 124.85 21.4799C125.241 21.0744 125.533 20.4142 125.723 19.4992L126.946 13.4945H130.043L128.788 19.6863C128.111 22.9824 126.147 24.6305 122.896 24.6305Z"
+            fill="currentColor" />
+          <path
+            d="M141.416 16.9725C141.416 17.9707 141.146 18.8337 140.606 19.5616C140.066 20.279 139.309 20.8041 138.335 21.1368L140.225 24.4121H136.938L135.286 21.5111H133.698L133.11 24.4121H129.966L132.189 13.4945H136.938C138.357 13.4945 139.458 13.8012 140.241 14.4147C141.025 15.0281 141.416 15.8808 141.416 16.9725ZM138.24 17.2689C138.24 16.8218 138.087 16.489 137.779 16.2707C137.472 16.0419 137.044 15.9275 136.493 15.9275H134.841L134.174 19.1249H136.048C136.747 19.1249 137.287 18.9637 137.668 18.6414C138.049 18.319 138.24 17.8615 138.24 17.2689Z"
+            fill="currentColor" />
+          <path
+            d="M60.2817 34.7063C59.8987 34.7063 59.5507 34.6231 59.2376 34.4567C58.9283 34.2867 58.6852 34.0553 58.5085 33.7623C58.3354 33.4694 58.2488 33.1403 58.2488 32.775C58.2488 32.4097 58.3354 32.0806 58.5085 31.7877C58.6852 31.4947 58.9283 31.2651 59.2376 31.0987C59.5507 30.9287 59.8987 30.8437 60.2817 30.8437C60.6647 30.8437 61.009 30.9269 61.3147 31.0933C61.624 31.2596 61.8671 31.4911 62.0439 31.7877C62.2206 32.0806 62.309 32.4097 62.309 32.775C62.309 33.1403 62.2206 33.4712 62.0439 33.7678C61.8671 34.0607 61.624 34.2904 61.3147 34.4567C61.009 34.6231 60.6647 34.7063 60.2817 34.7063ZM60.2817 34.3482C60.5873 34.3482 60.8635 34.2813 61.1103 34.1475C61.357 34.0101 61.5504 33.822 61.6903 33.5833C61.8303 33.341 61.9002 33.0716 61.9002 32.775C61.9002 32.4784 61.8303 32.2108 61.6903 31.9721C61.5504 31.7298 61.357 31.5417 61.1103 31.4079C60.8635 31.2705 60.5873 31.2018 60.2817 31.2018C59.976 31.2018 59.698 31.2705 59.4475 31.4079C59.2008 31.5417 59.0056 31.7298 58.862 31.9721C58.7221 32.2108 58.6521 32.4784 58.6521 32.775C58.6521 33.0716 58.7221 33.341 58.862 33.5833C59.0056 33.822 59.2008 34.0101 59.4475 34.1475C59.698 34.2813 59.976 34.3482 60.2817 34.3482Z"
+            fill="currentColor" />
+          <path
+            d="M64.6876 31.7985C64.9601 31.7985 65.2068 31.86 65.4278 31.983C65.6488 32.1023 65.8219 32.2723 65.9471 32.4929C66.0723 32.7135 66.1349 32.9649 66.1349 33.247C66.1349 33.5327 66.0723 33.7858 65.9471 34.0065C65.8219 34.2271 65.6488 34.3989 65.4278 34.5218C65.2105 34.6412 64.9638 34.7008 64.6876 34.7008C64.4519 34.7008 64.2383 34.6538 64.0468 34.5598C63.859 34.4622 63.7043 34.3211 63.5828 34.1367V35.7262H63.1906V31.8202H63.5662V32.3844C63.684 32.1963 63.8387 32.0517 64.0302 31.9504C64.2254 31.8492 64.4445 31.7985 64.6876 31.7985ZM64.66 34.3591C64.8625 34.3591 65.0466 34.3139 65.2124 34.2235C65.3781 34.1294 65.507 33.9974 65.5991 33.8274C65.6948 33.6575 65.7427 33.464 65.7427 33.247C65.7427 33.03 65.6948 32.8383 65.5991 32.6719C65.507 32.5019 65.3781 32.3699 65.2124 32.2759C65.0466 32.1819 64.8625 32.1349 64.66 32.1349C64.4537 32.1349 64.2678 32.1819 64.102 32.2759C63.94 32.3699 63.8111 32.5019 63.7154 32.6719C63.6233 32.8383 63.5772 33.03 63.5772 33.247C63.5772 33.464 63.6233 33.6575 63.7154 33.8274C63.8111 33.9974 63.94 34.1294 64.102 34.2235C64.2678 34.3139 64.4537 34.3591 64.66 34.3591Z"
+            fill="currentColor" />
+          <path d="M69.0325 32.162H67.3698V34.6737H66.9776V31.8202H69.0325V32.162Z" fill="currentColor" />
+          <path
+            d="M70.5992 31.7985C70.9785 31.7985 71.2694 31.8925 71.472 32.0806C71.6745 32.2651 71.7758 32.5399 71.7758 32.9052V34.6737H71.4002V34.2289C71.3118 34.3772 71.1811 34.4929 71.008 34.5761C70.8386 34.6593 70.636 34.7008 70.4003 34.7008C70.0762 34.7008 69.8185 34.6249 69.627 34.473C69.4355 34.3211 69.3397 34.1204 69.3397 33.8708C69.3397 33.6285 69.4281 33.4332 69.6049 33.2849C69.7853 33.1367 70.0707 33.0625 70.4611 33.0625H71.3836V32.8889C71.3836 32.643 71.3136 32.4567 71.1737 32.3302C71.0337 32.2 70.8294 32.1349 70.5605 32.1349C70.3764 32.1349 70.1996 32.1656 70.0302 32.2271C69.8608 32.285 69.7153 32.3663 69.5938 32.4712L69.417 32.1837C69.5643 32.0607 69.7411 31.9667 69.9473 31.9016C70.1536 31.8329 70.3709 31.7985 70.5992 31.7985ZM70.4611 34.3971C70.682 34.3971 70.8717 34.3482 71.0301 34.2506C71.1884 34.1493 71.3063 34.0047 71.3836 33.8166V33.35H70.4721C69.975 33.35 69.7264 33.52 69.7264 33.86C69.7264 34.0263 69.7908 34.1584 69.9197 34.256C70.0486 34.35 70.2291 34.3971 70.4611 34.3971Z"
+            fill="currentColor" />
+          <path
+            d="M72.8199 31.8202H73.2121V33.0842H75.0406V31.8202H75.4328V34.6737H75.0406V33.4151H73.2121V34.6737H72.8199V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M76.5476 31.8202H76.9398V34.0878L78.8787 31.8202H79.2267V34.6737H78.8345V32.4061L76.9011 34.6737H76.5476V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M81.7056 33.1873C81.9118 33.2343 82.0701 33.3157 82.1806 33.4314C82.2948 33.5471 82.3519 33.6882 82.3519 33.8546C82.3519 34.0209 82.293 34.1692 82.1751 34.2994C82.0609 34.4296 81.9044 34.5309 81.7056 34.6032C81.5067 34.6719 81.2876 34.7063 81.0482 34.7063C80.8383 34.7063 80.632 34.6773 80.4295 34.6195C80.227 34.558 80.0502 34.4694 79.8992 34.3537L80.0318 34.0661C80.1643 34.1638 80.319 34.2397 80.4958 34.294C80.6726 34.3482 80.8512 34.3754 81.0316 34.3754C81.3005 34.3754 81.5196 34.3265 81.689 34.2289C81.8621 34.1276 81.9486 33.992 81.9486 33.822C81.9486 33.6701 81.8786 33.5526 81.7387 33.4694C81.5988 33.3826 81.4073 33.3392 81.1642 33.3392H80.667V33.0571H81.1421C81.3594 33.0571 81.5343 33.0173 81.6669 32.9377C81.7995 32.8546 81.8658 32.7443 81.8658 32.6068C81.8658 32.4549 81.7903 32.3356 81.6393 32.2488C81.492 32.162 81.2986 32.1186 81.0592 32.1186C80.7462 32.1186 80.4369 32.1963 80.1312 32.3519L80.0207 32.0535C80.3669 31.8763 80.726 31.7877 81.0979 31.7877C81.3189 31.7877 81.5177 31.8202 81.6945 31.8853C81.875 31.9468 82.0149 32.0354 82.1143 32.1511C82.2175 32.2669 82.269 32.4007 82.269 32.5526C82.269 32.6972 82.2175 32.8256 82.1143 32.9377C82.0149 33.0499 81.8786 33.133 81.7056 33.1873Z"
+            fill="currentColor" />
+          <path
+            d="M84.2421 31.7985C84.6214 31.7985 84.9123 31.8925 85.1149 32.0806C85.3174 32.2651 85.4187 32.5399 85.4187 32.9052V34.6737H85.0431V34.2289C84.9547 34.3772 84.824 34.4929 84.6509 34.5761C84.4815 34.6593 84.2789 34.7008 84.0432 34.7008C83.7191 34.7008 83.4614 34.6249 83.2699 34.473C83.0784 34.3211 82.9826 34.1204 82.9826 33.8708C82.9826 33.6285 83.071 33.4332 83.2478 33.2849C83.4282 33.1367 83.7136 33.0625 84.104 33.0625H85.0265V32.8889C85.0265 32.643 84.9565 32.4567 84.8166 32.3302C84.6766 32.2 84.4723 32.1349 84.2034 32.1349C84.0193 32.1349 83.8425 32.1656 83.6731 32.2271C83.5037 32.285 83.3582 32.3663 83.2367 32.4712L83.0599 32.1837C83.2073 32.0607 83.384 31.9667 83.5902 31.9016C83.7965 31.8329 84.0138 31.7985 84.2421 31.7985ZM84.104 34.3971C84.325 34.3971 84.5146 34.3482 84.673 34.2506C84.8313 34.1493 84.9492 34.0047 85.0265 33.8166V33.35H84.115C83.6179 33.35 83.3693 33.52 83.3693 33.86C83.3693 34.0263 83.4337 34.1584 83.5626 34.256C83.6915 34.35 83.872 34.3971 84.104 34.3971Z"
+            fill="currentColor" />
+          <path
+            d="M89.49 34.3374V35.3898H89.1199V34.6737H86.4628V31.8202H86.855V34.3374H88.6282V31.8202H89.0204V34.3374H89.49Z"
+            fill="currentColor" />
+          <path
+            d="M90.239 31.8202H90.6312V34.0878L92.5702 31.8202H92.9182V34.6737H92.526V32.4061L90.5926 34.6737H90.239V31.8202Z"
+            fill="currentColor" />
+          <path
+            d="M96.2739 31.8202V34.6737H95.9148V33.7298H94.8929L94.219 34.6737H93.7936L94.5173 33.6755C94.2926 33.6141 94.1195 33.5092 93.998 33.3609C93.8765 33.2126 93.8157 33.0245 93.8157 32.7967C93.8157 32.4784 93.9262 32.2361 94.1472 32.0698C94.3681 31.9034 94.6701 31.8202 95.0531 31.8202H96.2739ZM94.2134 32.8076C94.2134 33.2307 94.4878 33.4423 95.0365 33.4423H95.9148V32.162H95.0641C94.497 32.162 94.2134 32.3772 94.2134 32.8076Z"
+            fill="currentColor" />
+          <path d="M101.445 31.8202V34.6737H101.053V32.162H99.2302V34.6737H98.838V31.8202H101.445Z"
+            fill="currentColor" />
+          <path
+            d="M103.759 34.7008C103.479 34.7008 103.227 34.6394 103.002 34.5164C102.778 34.3898 102.601 34.2162 102.472 33.9956C102.343 33.775 102.279 33.5254 102.279 33.247C102.279 32.9685 102.343 32.7189 102.472 32.4983C102.601 32.2777 102.778 32.1059 103.002 31.983C103.227 31.86 103.479 31.7985 103.759 31.7985C104.039 31.7985 104.291 31.86 104.516 31.983C104.74 32.1059 104.915 32.2777 105.041 32.4983C105.169 32.7189 105.234 32.9685 105.234 33.247C105.234 33.5254 105.169 33.775 105.041 33.9956C104.915 34.2162 104.74 34.3898 104.516 34.5164C104.291 34.6394 104.039 34.7008 103.759 34.7008ZM103.759 34.3591C103.965 34.3591 104.149 34.3139 104.311 34.2235C104.477 34.1294 104.606 33.9974 104.698 33.8274C104.79 33.6575 104.836 33.464 104.836 33.247C104.836 33.03 104.79 32.8365 104.698 32.6665C104.606 32.4965 104.477 32.3663 104.311 32.2759C104.149 32.1819 103.965 32.1349 103.759 32.1349C103.553 32.1349 103.367 32.1819 103.201 32.2759C103.039 32.3663 102.91 32.4965 102.814 32.6665C102.722 32.8365 102.676 33.03 102.676 33.247C102.676 33.464 102.722 33.6575 102.814 33.8274C102.91 33.9974 103.039 34.1294 103.201 34.2235C103.367 34.3139 103.553 34.3591 103.759 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M107.787 34.6737L106.865 33.4802L105.936 34.6737H105.495L106.644 33.209L105.55 31.8202H105.992L106.865 32.9377L107.737 31.8202H108.168L107.074 33.209L108.234 34.6737H107.787Z"
+            fill="currentColor" />
+          <path
+            d="M109.974 34.7008C109.694 34.7008 109.441 34.6394 109.217 34.5164C108.992 34.3898 108.815 34.2162 108.686 33.9956C108.558 33.775 108.493 33.5254 108.493 33.247C108.493 32.9685 108.558 32.7189 108.686 32.4983C108.815 32.2777 108.992 32.1059 109.217 31.983C109.441 31.86 109.694 31.7985 109.974 31.7985C110.253 31.7985 110.506 31.86 110.73 31.983C110.955 32.1059 111.13 32.2777 111.255 32.4983C111.384 32.7189 111.448 32.9685 111.448 33.247C111.448 33.5254 111.384 33.775 111.255 33.9956C111.13 34.2162 110.955 34.3898 110.73 34.5164C110.506 34.6394 110.253 34.7008 109.974 34.7008ZM109.974 34.3591C110.18 34.3591 110.364 34.3139 110.526 34.2235C110.692 34.1294 110.821 33.9974 110.913 33.8274C111.005 33.6575 111.051 33.464 111.051 33.247C111.051 33.03 111.005 32.8365 110.913 32.6665C110.821 32.4965 110.692 32.3663 110.526 32.2759C110.364 32.1819 110.18 32.1349 109.974 32.1349C109.767 32.1349 109.581 32.1819 109.416 32.2759C109.254 32.3663 109.125 32.4965 109.029 32.6665C108.937 32.8365 108.891 33.03 108.891 33.247C108.891 33.464 108.937 33.6575 109.029 33.8274C109.125 33.9974 109.254 34.1294 109.416 34.2235C109.581 34.3139 109.767 34.3591 109.974 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M115.104 34.3374V35.3627H114.734V34.6737H112.132V35.3627H111.762V34.3374H111.928C112.123 34.3265 112.256 34.1855 112.326 33.9142C112.396 33.643 112.444 33.2632 112.469 32.775L112.508 31.8202H114.651V34.3374H115.104ZM112.828 32.7967C112.81 33.2018 112.775 33.5363 112.723 33.8003C112.672 34.0607 112.58 34.2397 112.447 34.3374H114.259V32.162H112.862L112.828 32.7967Z"
+            fill="currentColor" />
+          <path
+            d="M117.067 34.7008C116.788 34.7008 116.535 34.6394 116.311 34.5164C116.086 34.3898 115.909 34.2162 115.78 33.9956C115.651 33.775 115.587 33.5254 115.587 33.247C115.587 32.9685 115.651 32.7189 115.78 32.4983C115.909 32.2777 116.086 32.1059 116.311 31.983C116.535 31.86 116.788 31.7985 117.067 31.7985C117.347 31.7985 117.6 31.86 117.824 31.983C118.049 32.1059 118.224 32.2777 118.349 32.4983C118.478 32.7189 118.542 32.9685 118.542 33.247C118.542 33.5254 118.478 33.775 118.349 33.9956C118.224 34.2162 118.049 34.3898 117.824 34.5164C117.6 34.6394 117.347 34.7008 117.067 34.7008ZM117.067 34.3591C117.274 34.3591 117.458 34.3139 117.62 34.2235C117.786 34.1294 117.914 33.9974 118.006 33.8274C118.099 33.6575 118.145 33.464 118.145 33.247C118.145 33.03 118.099 32.8365 118.006 32.6665C117.914 32.4965 117.786 32.3663 117.62 32.2759C117.458 32.1819 117.274 32.1349 117.067 32.1349C116.861 32.1349 116.675 32.1819 116.509 32.2759C116.347 32.3663 116.219 32.4965 116.123 32.6665C116.031 32.8365 115.985 33.03 115.985 33.247C115.985 33.464 116.031 33.6575 116.123 33.8274C116.219 33.9974 116.347 34.1294 116.509 34.2235C116.675 34.3139 116.861 34.3591 117.067 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M121.231 33.1981C121.625 33.2886 121.822 33.5218 121.822 33.898C121.822 34.1475 121.728 34.3392 121.54 34.473C121.353 34.6068 121.073 34.6737 120.701 34.6737H119.381V31.8202H120.662C120.994 31.8202 121.253 31.8835 121.441 32.0101C121.629 32.1367 121.723 32.3175 121.723 32.5526C121.723 32.7081 121.679 32.8419 121.59 32.954C121.505 33.0625 121.386 33.1439 121.231 33.1981ZM119.762 33.0896H120.635C120.859 33.0896 121.03 33.0481 121.148 32.9649C121.27 32.8817 121.331 32.7605 121.331 32.6014C121.331 32.4423 121.27 32.3229 121.148 32.2434C121.03 32.1638 120.859 32.124 120.635 32.124H119.762V33.0896ZM120.684 34.3699C120.935 34.3699 121.122 34.3301 121.248 34.2506C121.373 34.171 121.436 34.0462 121.436 33.8763C121.436 33.7063 121.378 33.5815 121.264 33.5019C121.15 33.4188 120.97 33.3772 120.723 33.3772H119.762V34.3699H120.684Z"
+            fill="currentColor" />
+          <path
+            d="M126.038 33.1981C126.432 33.2886 126.629 33.5218 126.629 33.898C126.629 34.1475 126.535 34.3392 126.347 34.473C126.159 34.6068 125.879 34.6737 125.507 34.6737H124.187V31.8202H125.469C125.8 31.8202 126.06 31.8835 126.248 32.0101C126.435 32.1367 126.529 32.3175 126.529 32.5526C126.529 32.7081 126.485 32.8419 126.397 32.954C126.312 33.0625 126.192 33.1439 126.038 33.1981ZM124.568 33.0896H125.441C125.666 33.0896 125.837 33.0481 125.955 32.9649C126.076 32.8817 126.137 32.7605 126.137 32.6014C126.137 32.4423 126.076 32.3229 125.955 32.2434C125.837 32.1638 125.666 32.124 125.441 32.124H124.568V33.0896ZM125.491 34.3699C125.741 34.3699 125.929 34.3301 126.054 34.2506C126.179 34.171 126.242 34.0462 126.242 33.8763C126.242 33.7063 126.185 33.5815 126.071 33.5019C125.957 33.4188 125.776 33.3772 125.529 33.3772H124.568V34.3699H125.491Z"
+            fill="currentColor" />
+          <path d="M131.049 32.162H129.386V34.6737H128.994V31.8202H131.049V32.162Z" fill="currentColor" />
+          <path
+            d="M132.679 34.7008C132.399 34.7008 132.147 34.6394 131.923 34.5164C131.698 34.3898 131.521 34.2162 131.392 33.9956C131.263 33.775 131.199 33.5254 131.199 33.247C131.199 32.9685 131.263 32.7189 131.392 32.4983C131.521 32.2777 131.698 32.1059 131.923 31.983C132.147 31.86 132.399 31.7985 132.679 31.7985C132.959 31.7985 133.211 31.86 133.436 31.983C133.661 32.1059 133.836 32.2777 133.961 32.4983C134.09 32.7189 134.154 32.9685 134.154 33.247C134.154 33.5254 134.09 33.775 133.961 33.9956C133.836 34.2162 133.661 34.3898 133.436 34.5164C133.211 34.6394 132.959 34.7008 132.679 34.7008ZM132.679 34.3591C132.886 34.3591 133.07 34.3139 133.232 34.2235C133.397 34.1294 133.526 33.9974 133.618 33.8274C133.71 33.6575 133.757 33.464 133.757 33.247C133.757 33.03 133.71 32.8365 133.618 32.6665C133.526 32.4965 133.397 32.3663 133.232 32.2759C133.07 32.1819 132.886 32.1349 132.679 32.1349C132.473 32.1349 132.287 32.1819 132.121 32.2759C131.959 32.3663 131.83 32.4965 131.735 32.6665C131.643 32.8365 131.597 33.03 131.597 33.247C131.597 33.464 131.643 33.6575 131.735 33.8274C131.83 33.9974 131.959 34.1294 132.121 34.2235C132.287 34.3139 132.473 34.3591 132.679 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M136.49 31.7985C136.762 31.7985 137.009 31.86 137.23 31.983C137.451 32.1023 137.624 32.2723 137.749 32.4929C137.874 32.7135 137.937 32.9649 137.937 33.247C137.937 33.5327 137.874 33.7858 137.749 34.0065C137.624 34.2271 137.451 34.3989 137.23 34.5218C137.012 34.6412 136.766 34.7008 136.49 34.7008C136.254 34.7008 136.04 34.6538 135.849 34.5598C135.661 34.4622 135.506 34.3211 135.385 34.1367V35.7262H134.992V31.8202H135.368V32.3844C135.486 32.1963 135.641 32.0517 135.832 31.9504C136.027 31.8492 136.246 31.7985 136.49 31.7985ZM136.462 34.3591C136.664 34.3591 136.849 34.3139 137.014 34.2235C137.18 34.1294 137.309 33.9974 137.401 33.8274C137.497 33.6575 137.545 33.464 137.545 33.247C137.545 33.03 137.497 32.8383 137.401 32.6719C137.309 32.5019 137.18 32.3699 137.014 32.2759C136.849 32.1819 136.664 32.1349 136.462 32.1349C136.256 32.1349 136.07 32.1819 135.904 32.2759C135.742 32.3699 135.613 32.5019 135.517 32.6719C135.425 32.8383 135.379 33.03 135.379 33.247C135.379 33.464 135.425 33.6575 135.517 33.8274C135.613 33.9974 135.742 34.1294 135.904 34.2235C136.07 34.3139 136.256 34.3591 136.462 34.3591Z"
+            fill="currentColor" />
+          <path
+            d="M140 32.8293C140.365 32.8329 140.643 32.9124 140.834 33.0679C141.026 33.2235 141.122 33.4477 141.122 33.7406C141.122 34.0444 141.019 34.2777 140.812 34.4404C140.606 34.6032 140.311 34.6828 139.928 34.6791L138.779 34.6737V31.8202H139.172V32.8184L140 32.8293ZM141.608 31.8202H142V34.6737H141.608V31.8202ZM139.906 34.3862C140.175 34.3898 140.378 34.3374 140.514 34.2289C140.654 34.1168 140.724 33.954 140.724 33.7406C140.724 33.5309 140.656 33.3754 140.52 33.2741C140.383 33.1728 140.179 33.1204 139.906 33.1168L139.172 33.1059V34.3754L139.906 34.3862Z"
+            fill="currentColor" />
+        </svg>
+      </a>
+
+      <!-- Стили disabled для footer-list__link добавить класс: footer-list__link два тире disabled -->
+      <ul class="footer-nav__list footer-list">
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">Туры</a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">Обучение</a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">О нас</a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">Отзывы</a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">Фотографии</a>
+        </li>
+        <li class="footer-list__item">
+          <a class="footer-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer-nav__socials socials">
+        <li class="socials__item">
+          <a class="socials__link socials-link socials-link--vk" href="#">
+            <span class="visually-hidden">В контакте.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials-link socials-link--ok" href="#">
+            <span class="visually-hidden">Одноклассники.</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials-link  socials-link--reddit" href="#">
+            <span class="visually-hidden">Reddit.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-nav__phone footer-phone" href="tel:88007253232">8 800 725-32-32</a>
+      <a class="footer-nav__confidential" href="#">Политика конфиденциальности</a>
+    </section>
+  </footer>
+</body>
+
+</html>

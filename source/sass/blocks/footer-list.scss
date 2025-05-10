@@ -1,0 +1,143 @@
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  justify-content: center;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+  gap: 9px 50px;
+}
+
+.footer-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  &:first-child {
+    grid-area: a;
+  }
+
+  &:nth-child(2) {
+    grid-area: c;
+  }
+
+  &:nth-child(3) {
+    grid-area: e;
+  }
+
+  &:nth-child(4) {
+    grid-area: b;
+  }
+
+  &:nth-child(5) {
+    grid-area: d;
+  }
+
+  &:nth-child(6) {
+    grid-area: f;
+  }
+}
+
+.footer-list__link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary;
+  padding: 3px 5px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(1);
+      transition: transform 0.4s ease;
+      transform-origin: center;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 1px solid $primary;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    color: $header-background;
+    outline: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+/* Состояние disabled для ссылок меню в футере */
+.footer-list__link--disabled {
+  color: $disabled;
+  pointer-events: none;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-list {
+    padding-top: 12px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-list__item {
+    justify-content: unset;
+    max-width: 101px;
+    min-width: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-list {
+    justify-content: flex-start;
+    padding: 11px 100px 39px 109px;
+    gap: 21px;
+  }
+
+  .footer-list__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .footer-list__item {
+    max-width: 105px;
+
+    &:nth-child(6) {
+      margin-left: 7px;
+    }
+  }
+}

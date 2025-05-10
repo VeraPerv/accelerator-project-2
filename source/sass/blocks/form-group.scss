@@ -1,0 +1,85 @@
+.form-group__field {
+  width: 258px;
+}
+
+.form-group__button {
+  margin: 0 auto;
+  width: 258px;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.form-group__label {
+  display: block;
+  font-family: $font-family;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary;
+  opacity: 0.5;
+  bottom: 16px;
+  left: 15px;
+
+  .field:hover + & {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .field:disabled + & {
+    color: $disabled;
+    opacity: 0.5;
+  }
+}
+
+.form-group__input-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+  width: 258px;
+}
+
+.field:not(:placeholder-shown) + .form-group__label,
+.field:focus + .form-group__label,
+.field:focus-visible + .form-group__label,
+.field:valid + .form-group__label,
+.field--error + .form-group__label {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__field {
+    width: 360px;
+  }
+
+  .form-group__input-wrapper {
+    margin-bottom: 10px;
+    width: 360px;
+  }
+
+  .form-group__label {
+    bottom: 20px;
+    left: 31px;
+  }
+
+  .form-group__button {
+    width: 360px;
+    padding: 16px 10px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .form-group__button {
+    width: 180px;
+    min-height: 56px;
+  }
+}

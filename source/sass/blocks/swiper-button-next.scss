@@ -1,0 +1,57 @@
+.swiper-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: $header-background;
+  width: 37px;
+  height: 35px;
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid $active;
+    outline-offset: -1px;
+    background-color: $white;
+  }
+
+  &:hover::after {
+    background-color: $active;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    background-color: $white;
+  }
+
+  &:focus::after,
+  &:focus-visible::after {
+    background-color: $active;
+  }
+
+  &:active {
+    background-color: $active;
+  }
+
+  &:active::after {
+    background-color: $white;
+  }
+
+  &:disabled {
+    background-color: rgba(153, 153, 153, 1);
+    opacity: 1;
+  }
+}
+
+.swiper-button-next::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  mask-image: url("/__spritemap#sprite-right-view");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 13px 9px;
+  background-color: $white;
+}

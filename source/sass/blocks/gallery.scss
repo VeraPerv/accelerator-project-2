@@ -1,0 +1,145 @@
+.gallery {
+  padding: 37px 0 3px;
+  max-width: 320px;
+
+  .swiper-slide {
+    width: 158px;
+    min-height: 266px;
+  }
+
+  .gallery__swiper-button {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 37px;
+    height: 35px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 9px;
+    mask-size: 13px 9px;
+  }
+
+  .swiper-button-prev::after {
+    transform: rotate(180deg);
+  }
+}
+
+.gallery__caption {
+  padding: 0 15px;
+  margin-bottom: 26px;
+
+  &::before {
+    left: 16px;
+  }
+}
+
+.gallery__wrapper {
+  margin-top: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding-top: 60px;
+    max-width: 768px;
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      width: 480px;
+      padding: 0 45px;
+    }
+
+    .gallery__swiper-button {
+      display: flex;
+    }
+
+    .swiper {
+      position: static;
+    }
+
+    .gallery__swiper-button--prev {
+      top: -34px;
+      left: unset;
+      right: 86px;
+    }
+
+    .gallery__swiper-button--next {
+      top: -34px;
+      left: unset;
+      right: 45px;
+    }
+
+    .swiper-slide {
+      min-height: 418px;
+    }
+  }
+
+  .gallery__caption {
+    padding: 0 0 0 45px;
+    margin-bottom: 30px;
+    max-width: 678px;
+
+    &::before {
+      left: 44px;
+    }
+  }
+
+  .gallery__wrapper {
+    position: relative;
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    padding-top: 123px;
+    max-width: 1440px;
+
+    .gallery__swiper-button {
+      display: none;
+    }
+
+    p {
+      padding: 0 590px 0 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: unset;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .swiper-slide {
+      width: 284px;
+      min-height: 463px;
+    }
+  }
+
+  .gallery__wrapper {
+    margin-top: 45px;
+  }
+
+  .gallery__caption {
+    max-width: 768px;
+    padding: 0 0 0 120px;
+    margin: 0 0 24px;
+
+    &::before {
+      left: 120px;
+    }
+  }
+}

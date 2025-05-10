@@ -1,0 +1,21 @@
+.footer-logo {
+  svg {
+    width: 142px;
+    height: 42px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $header-background;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+    opacity: 1;
+  }
+}

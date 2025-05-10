@@ -1,0 +1,24 @@
+.badges {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .badges__item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: $white;
+    outline: 1px solid $white05;
+    padding: 14px 20px 12px 40px;
+    max-width: 184px;
+  }
+}

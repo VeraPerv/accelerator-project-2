@@ -1,0 +1,29 @@
+.education {
+  padding: 25px 0 0;
+}
+
+.education__caption {
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .education {
+    padding: 27px 0 17px;
+  }
+
+  .education__caption {
+    margin-bottom: 100px;
+    padding-right: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .education {
+    padding: 58px 0 0;
+  }
+
+  .education__caption {
+    margin-bottom: 28px;
+    padding-right: 308px;
+  }
+}

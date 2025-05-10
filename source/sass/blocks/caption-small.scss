@@ -1,0 +1,13 @@
+.caption-small {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .caption-small {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

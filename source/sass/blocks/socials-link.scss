@@ -1,0 +1,79 @@
+.socials-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 7px;
+  outline: 1px solid rgba(45, 56, 63, 0.3);
+  outline-offset: -1px;
+  width: 30px;
+  height: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+  }
+
+  &--vk::before {
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 16px 9px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary;
+  }
+
+  &--ok::before {
+    mask-image: url("/__spritemap#sprite-ok-view");
+    mask-size: 9px 16px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary;
+  }
+
+  &--reddit::before {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-size: 14px 15px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $primary;
+  }
+
+  &:hover {
+    outline: 1px solid $primary;
+
+    &::before {
+      background-color: $primary;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+
+    &::before {
+      background-color: $primary;
+    }
+  }
+
+  &:active {
+    background-color: $header-background;
+    outline: none;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+}
+
+.socials-link--disabled {
+  outline: 1px solid $socials-disabled;
+  pointer-events: none;
+
+  &::before {
+    background-color: $socials-disabled;
+  }
+}

@@ -1,0 +1,164 @@
+.training {
+  p {
+    margin: 0 0 28px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 37px;
+    height: 35px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 9px;
+    mask-size: 13px 9px;
+  }
+
+  .swiper-button-prev::after {
+    transform: rotate(180deg);
+  }
+
+  .training__swiper-button {
+    display: none;
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+  }
+}
+
+.training__content-wrapper {
+  padding: 37px 15px 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.training__caption {
+  margin-bottom: 34px;
+}
+
+.training__heading {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .training {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 158px;
+      right: 0;
+      width: 465px;
+      height: 280px;
+      background-image: url("/img/training/training-clouds-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -1;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("/img/training/training-clouds-tablet@2x.png");
+      }
+    }
+
+    .training__swiper-button {
+      display: flex;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 29px;
+    }
+
+    .swiper {
+      position: static;
+    }
+
+    .training__swiper-button--next {
+      position: absolute;
+      top: -43px;
+      right: 0;
+      z-index: 10;
+    }
+
+    .training__swiper-button--prev {
+      position: absolute;
+      top: -43px;
+      left: unset;
+      right: 41px;
+    }
+
+    .swiper-button-prev .swiper-button-disabled,
+    .swiper-button-next .swiper-button-disabled {
+      opacity: 1;
+    }
+  }
+
+  .training__content-wrapper {
+    max-width: 768px;
+    padding: 60px 45px 0;
+  }
+
+  .training__heading {
+    margin-bottom: 37px;
+    padding-right: 150px;
+  }
+
+  .training__caption {
+    padding-right: 150px;
+  }
+
+  .training__wrapper {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training {
+    &::after {
+      bottom: -4px;
+      width: 44%;
+      height: 280px;
+      background-image: url("/img/training/training-clouds-desktop@1x.png");
+
+      @media (resolution >= 2dppx) {
+        background-image: url("/img/training/training-clouds-desktop@2x.png");
+      }
+    }
+
+    p {
+      width: 850px;
+      margin: 0 0 62px;
+    }
+
+    .training__swiper-button--next,
+    .training__swiper-button--prev {
+      top: -33px;
+    }
+  }
+
+  .training__content-wrapper {
+    max-width: 1440px;
+    padding: 62px 120px 30px;
+  }
+
+  .training__caption {
+    margin-bottom: 12px;
+    min-height: 55px;
+    padding-right: 308px;
+  }
+
+  .training__heading {
+    margin-bottom: 16px;
+    padding-right: 308px;
+  }
+}
